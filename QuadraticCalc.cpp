@@ -4,8 +4,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define _HAS_STD_BYTE 0
 #include <iostream>
-#include "Number.cpp"
-#include "Solve.h"
+
 #include "GraphicEngine.cpp"
 
 void input(Number& a, Number& b, Number& c)

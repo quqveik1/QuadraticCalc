@@ -6,7 +6,7 @@
 #include <InputButton2.cpp>
 #include "MainLayout.cpp"
 #include <TextView.cpp>
-#include "SolutionWindow.h"
+#include "SolutionWindow.cpp"
 #include <DoubleInputButton.cpp>
 
 
@@ -25,8 +25,9 @@ void GraphicEngine::onCreate(HWND window, UINT message, WPARAM wParam, LPARAM lP
     _mainManager->addWindow(inputLayout);
     TextView* textWindow = new TextView(this, systemSettings->MainFont * 3);
     textWindow->setText("Введите коэффициенты уравнения:");
+    textWindow->setWrapStatus(1);
     inputLayout->addWindow(textWindow);
-    SolutionWindow* solutionWindow = new SolutionWindow(this, {300, 150});
+    SolutionWindow* solutionWindow = new SolutionWindow(this, {1000, 150});
     inputLayout->addWindow(solutionWindow);
     
 }
