@@ -27,7 +27,7 @@ void GraphicEngine::onCreate(HWND window, UINT message, WPARAM wParam, LPARAM lP
     textWindow->setText("Введите коэффициенты уравнения:");
     textWindow->setWrapStatus(1);
     inputLayout->addWindow(textWindow);
-    SolutionWindow* solutionWindow = new SolutionWindow(this, {1000, 150});
+    SolutionWindow* solutionWindow = new SolutionWindow(this, {1000, 225});
     inputLayout->addWindow(solutionWindow);
     
 }
