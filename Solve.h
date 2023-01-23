@@ -14,7 +14,15 @@ int solveExpression(Number& a, Number& b, Number& c, Number answer[2])//ax^2 + b
     {
         return 0;
     }
-    if (isEqual(a.num, 0)) return -1;
+    if (isEqual(a.num, 0))
+    {
+        if (!isEqual(b.num, 0))
+        {
+            answer[0].num = -(c.num / b.num);
+            return 1;
+        }
+        return -1;
+    }
 
     if (isEqual(d.num, 0))
     {
