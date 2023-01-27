@@ -5,8 +5,24 @@
 
 using namespace std;
 
+//ax + b = 0
+Number solveLinearExpression(const Number& a, const Number& b)
+{
+    Number answer = {};
+    if (!isEqual(a.num, 0))
+    {
+        answer.num = -(b.num / a.num);
+    }
+    else
+    {
+        printf("Деление на ноль!\n");
+    }
 
-int solveExpression(Number& a, Number& b, Number& c, Number answer[2])//ax^2 + bx + c
+    return answer;
+}
+
+
+int solveExpression(const Number& a, const Number& b, const Number& c, Number answer[2])//ax^2 + bx + c
 {
     Number d = {};
     d.num = (b.num * b.num) - (4 * a.num * c.num);
@@ -18,7 +34,8 @@ int solveExpression(Number& a, Number& b, Number& c, Number answer[2])//ax^2 + b
     {
         if (!isEqual(b.num, 0))
         {
-            answer[0].num = -(c.num / b.num);
+            //linear expression
+            answer[0] = solveLinearExpression(b, c);
             return 1;
         }
         return -1;
@@ -26,6 +43,8 @@ int solveExpression(Number& a, Number& b, Number& c, Number answer[2])//ax^2 + b
 
     if (isEqual(d.num, 0))
     {
+        //full square case
+
         answer[0].num = (-b.num) / (2 * a.num);
         return 1;
     }

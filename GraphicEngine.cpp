@@ -23,11 +23,13 @@ void GraphicEngine::onCreate(HWND window, UINT message, WPARAM wParam, LPARAM lP
     setMainManager(_mainManager);
     MainLayout* inputLayout = new MainLayout(this);
     _mainManager->addWindow(inputLayout);
-    TextView* textWindow = new TextView(this, systemSettings->MainFont * 3);
-    textWindow->setText("Введите коэффициенты уравнения:");
-    textWindow->setWrapStatus(1);
-    inputLayout->addWindow(textWindow);
-    SolutionWindow* solutionWindow = new SolutionWindow(this, {1000, 225});
+    //TextView* textWindow = new TextView(this, systemSettings->MainFont * 3);
+    //textWindow->setText("Введите коэффициенты уравнения:");
+    //textWindow->setWrapStatus(1);
+    //textWindow->setMatchParentX(1);
+    //inputLayout->addWindow(textWindow);
+    
+    SolutionWindow* solutionWindow = new SolutionWindow(this, {1000, 255});
     inputLayout->addWindow(solutionWindow);
     
 }

@@ -60,20 +60,75 @@ int main()
 
 void startUnitTest()
 {
-    runAndPrintUnitTest(-3.5, 5, 9, 2, -1.04117, 2.46974);
-    runAndPrintUnitTest(1, 5, 9, 0);
-    runAndPrintUnitTest(8, 57, 0, 2, -7.125, 0);
-    runAndPrintUnitTest(1, 239, 1329, 2, -233.30356, -5.69644);
-    runAndPrintUnitTest(1, 179, 1589, 2, -169.6327, -9.3673);
-    runAndPrintUnitTest(5.8, 0, -1589, 2, -16.5519, 16.5519);
-    runAndPrintUnitTest(1.329, 0, -2007, 2, -38.86075, 38.86075);
-    runAndPrintUnitTest(1.329, 0, 2007, 0);
-    runAndPrintUnitTest(88, 99, 0, 2, -1.125, 0);
-    runAndPrintUnitTest(-57, 99, 0, 2, 1.73684, 0);
-    runAndPrintUnitTest(-1, 0, 0, 1);
-    runAndPrintUnitTest(0, 0, 0, -1);
-    runAndPrintUnitTest(0, 1, 0, 1, 0);
-    runAndPrintUnitTest(0, 0, 1, -1);
+    //                                      sol amount
+    //                   a       b       c       |       first sol       second sol
+    //полные уравнения
+    runAndPrintUnitTest (-3.5,   5,      9,      2,      -1.04117,       2.46974);
+    runAndPrintUnitTest (1,      239,    1329,   2,      -233.30356,    -5.69644);
+    runAndPrintUnitTest (1,      179,    1589,   2,      -169.6327,     -9.3673);
+    runAndPrintUnitTest (1,      5,      9,      0);
+    runAndPrintUnitTest (-2,     8,      5,      2,      -0.54951,      4.54951);
+    runAndPrintUnitTest (88,     -91,    6,      2,      0.0707785,     0.963312);
+
+
+    //                   a       b       c       |       first sol       second sol
+    //уравнения без c
+    runAndPrintUnitTest (8,      57,     0,      2,      -7.125,         0);
+    runAndPrintUnitTest (88,     99,     0,      2,      -1.125,         0);
+    runAndPrintUnitTest (-57,    99,     0,      2,      1.73684,        0);
+    runAndPrintUnitTest (-1,     2,      0,      2,      2,              0);
+    runAndPrintUnitTest (32,     63,     0,      2,      -1.96875,       0);
+    runAndPrintUnitTest (0,      1,      0,      1,      0);
+    
+
+    //                   a       b       c       |       first sol       second sol
+    //уравнения без b
+    runAndPrintUnitTest (5.8,    0,      -1589,  2,      -16.5519,       16.5519);
+    runAndPrintUnitTest (1.329,  0,      -2007,  2,      -38.86075,      38.86075);
+    runAndPrintUnitTest (88,     0,      -68,    2,      -0.879049,      0.879049);
+    runAndPrintUnitTest (13,     0,      -29,    2,      -1.49358,       1.49358);
+    runAndPrintUnitTest (-103,   0,      99,     2,      -0.98039,       0.98039);
+    runAndPrintUnitTest (-239,   0,      1547,   2,      -2.54417,       2.54417);
+    runAndPrintUnitTest (1.329,  0,      -2007,  2,      -38.86075,      38.86075);
+    runAndPrintUnitTest (1.329,  0,      2007,   0);
+
+
+    //                   a       b       c       |       first sol       second sol
+    //уравнения без a
+    runAndPrintUnitTest (0,      83,     -68,    1,      0.819277);
+    runAndPrintUnitTest (0,      83,     34,     1,      -0.409639);
+    runAndPrintUnitTest (0,      1011,   5783,   1,      -5.72008);
+    runAndPrintUnitTest (0,      -77,    23,     1,      0.298701);
+    runAndPrintUnitTest (0,      -79,    -79,    1,      -1);
+    runAndPrintUnitTest (0,      79,     79,     1,      -1); 
+
+
+    //                   a       b       c       |       first sol       second sol
+    //уравнения без а и с
+    runAndPrintUnitTest (0,      79,     0,      1,      0);
+    runAndPrintUnitTest (0,      -79,    0,      1,      0);
+    runAndPrintUnitTest (0,      1.82,   0,      1,      0);
+    runAndPrintUnitTest (0,      13.64,  0,      1,      0);
+    runAndPrintUnitTest (0,      -83.65, 0,      1,      0);
+
+
+    //                   a       b       c       |       first sol       second sol
+    //уравнения без с и b
+    runAndPrintUnitTest (87,     0,      0,      1,      0);
+    runAndPrintUnitTest (1329,   0,      0,      1,      0);
+    runAndPrintUnitTest (-64,    0,      0,      1,      0);
+    runAndPrintUnitTest (22,     0,      0,      1,      0);
+
+
+    //                   a       b       c       |       first sol       second sol
+    //нет коэфициентов
+    runAndPrintUnitTest (0,      0,      0,      -1);
+
+    //                   a       b       c       |       first sol       second sol
+    //только c
+    runAndPrintUnitTest (0,      0,      1,      -1);
+    runAndPrintUnitTest (0,      0,      101,    -1);
+    runAndPrintUnitTest (0,      0,      55.6,   -1);
 }
 
 
@@ -107,6 +162,13 @@ bool unitTest(double _a, double _b, double _c, int solutionsAmount, double first
     {
         isCorrect = false;
         return isCorrect;
+    }
+
+    if (isBigger(solutions[0].num, solutions[1].num))
+    {
+        double copy = solutions[0].num;
+        solutions[0].num = solutions[1].num;
+        solutions[1].num = copy;
     }
 
     double answer[2] = { min(firstAnswer, secondAnswer), max(firstAnswer, secondAnswer) };

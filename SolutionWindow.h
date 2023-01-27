@@ -25,6 +25,8 @@ struct SolutionWindow : Manager
 
     TextView solutions;
 
+    TextView textWindow;
+
     double minLimit = -100;
     double maxLimit = 100;
 
@@ -32,16 +34,20 @@ struct SolutionWindow : Manager
         Manager(_app),
         mainLayout(app, {}, LinearLayout::FLAG_VERTICAL),
         inputLayout(app, {}, LinearLayout::FLAG_HORIZONTAL),
-        aButton(app, {}, &a, &minLimit, &maxLimit, DoubleInputButton::STANDART_MODE, C_RED),
-        bButton(app, {}, &b, &minLimit, &maxLimit, DoubleInputButton::STANDART_MODE, C_RED),
-        cButton(app, {}, &c, &minLimit, &maxLimit, DoubleInputButton::STANDART_MODE, C_RED),
+        aButton(app, {}, &a, &minLimit, &maxLimit, DoubleInputButton::STANDART_MODE, app->systemSettings->MenuColor),
+        bButton(app, {}, &b, &minLimit, &maxLimit, DoubleInputButton::STANDART_MODE, app->systemSettings->MenuColor),
+        cButton(app, {}, &c, &minLimit, &maxLimit, DoubleInputButton::STANDART_MODE, app->systemSettings->MenuColor),
         aView (app, 0, "x^2 + "),
         bView (app, 0, "x + "),
         calcButton(app),
-        solutions(app)
+        solutions(app),
+        textWindow(app, app->systemSettings->MainFont * 3)
     {
         resize(_size);
         addWindow(mainLayout);
+        textWindow.setText("Введите коэффициенты уравнения:");
+        textWindow.setWrapStatusY(1);
+        mainLayout.addWindow(textWindow);
         mainLayout.addWindow(inputLayout);
         inputLayout.addWindow(aButton);
         inputLayout.addWindow(aView);
