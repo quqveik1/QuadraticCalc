@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>QuadraticCalc: Исходный файл SolutionWindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">QuadraticCalc&#160;<span id="projectnumber">1.0</span></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>SolutionWindow.h</h1>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#include &lt;WindowsLib.h&gt;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;LinearLayout.cpp&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;DoubleInputButton.cpp&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;InputButton2.cpp&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;TextView.cpp&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;MessageButton.cpp&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;Number.h&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00017"></a>00017 <span class="comment"></span><span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00018"></a><a class="code" href="struct_solution_window.html">00018</a> <span class="keyword">struct </span><a class="code" href="struct_solution_window.html" title="Окно решающей системы">SolutionWindow</a> : Manager
+<a name="l00019"></a>00019 {
+<a name="l00020"></a>00020     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00026"></a>00026 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00027"></a><a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e">00027</a>     LinearLayout <a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e" title="Главный вертикальный LinearLayout.">mainLayout</a>;
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00035"></a>00035 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00036"></a><a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e">00036</a>     LinearLayout <a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00044"></a>00044 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00045"></a><a class="code" href="group___u_i.html#gae4813ff258c826e4956286e327f16044">00045</a>     TextView <a class="code" href="group___u_i.html#gae4813ff258c826e4956286e327f16044" title="Поле с информированием о программе">textWindow</a>;
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00053"></a>00053 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00054"></a><a class="code" href="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4">00054</a>     DoubleInputButton <a class="code" href="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4" title="Окно для введения кожффициента a.">aButton</a>;
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00062"></a>00062 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00063"></a><a class="code" href="group___u_i.html#ga7777447806a3220e12c5e41bbda00652">00063</a>     TextView <a class="code" href="group___u_i.html#ga7777447806a3220e12c5e41bbda00652" title="Окно для показа x^2.">aView</a>;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00071"></a>00071 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00072"></a><a class="code" href="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3">00072</a>     <span class="keywordtype">double</span> <a class="code" href="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3" title="Коэффициент a.">a</a> = 0;
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00080"></a>00080 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00081"></a><a class="code" href="group___u_i.html#ga2a7741741b2199ac222556281f1474c0">00081</a>     DoubleInputButton <a class="code" href="group___u_i.html#ga2a7741741b2199ac222556281f1474c0" title="Окно для введения кожффициента b.">bButton</a>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00089"></a>00089 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00090"></a><a class="code" href="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229">00090</a>     TextView <a class="code" href="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229" title="Окно для показа x.">bView</a>;
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00098"></a>00098 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00099"></a><a class="code" href="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04">00099</a>     <span class="keywordtype">double</span> <a class="code" href="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04" title="Коэффициент b.">b</a> = 0;
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00107"></a>00107 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00108"></a><a class="code" href="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38">00108</a>     DoubleInputButton <a class="code" href="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38" title="Окно для введения кожффициента c.">cButton</a>;
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00116"></a>00116 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00117"></a><a class="code" href="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa">00117</a>     <span class="keywordtype">double</span> <a class="code" href="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa" title="Коэффициент c.">c</a> = 0;
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00125"></a>00125 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00126"></a><a class="code" href="group___u_i.html#ga1022c37f483309ed22237043b5454614">00126</a>     MessageButton <a class="code" href="group___u_i.html#ga1022c37f483309ed22237043b5454614" title="Кнопка начала вычислений">calcButton</a>;
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00134"></a>00134 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00135"></a><a class="code" href="group___u_i.html#ga4e207ce02c4161839da7448825e51b42">00135</a>     <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group___u_i.html#ga4e207ce02c4161839da7448825e51b42" title="Ключ для сообщения, посылаемого в это окно для старта решения уравнения">solute</a> = <span class="stringliteral">&quot;solute&quot;</span>;
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00144"></a>00144 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00145"></a><a class="code" href="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27">00145</a>     TextView <a class="code" href="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27" title="Поле для вывода ответов">solutions</a>;
+<a name="l00146"></a>00146 
+<a name="l00147"></a>00147     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00151"></a>00151 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00152"></a><a class="code" href="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed">00152</a>     <span class="keywordtype">double</span> <a class="code" href="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed" title="Минимальное значение для коэффицентов .">minLimit</a> = DBL_MIN;
+<a name="l00153"></a>00153 
+<a name="l00154"></a>00154     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00158"></a>00158 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00159"></a><a class="code" href="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d">00159</a>     <span class="keywordtype">double</span> <a class="code" href="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d" title="Максимальное значение для коэффицентов .">maxLimit</a> = DBL_MAX;
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161     <a class="code" href="struct_solution_window.html" title="Окно решающей системы">SolutionWindow</a>(AbstractAppData* _app, Vector _size) :
+<a name="l00162"></a>00162         Manager(_app),
+<a name="l00163"></a>00163         <a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e" title="Главный вертикальный LinearLayout.">mainLayout</a>(app, {}, LinearLayout::FLAG_VERTICAL),
+<a name="l00164"></a>00164         <a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>(app, {}, LinearLayout::FLAG_HORIZONTAL),
+<a name="l00165"></a>00165         <a class="code" href="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4" title="Окно для введения кожффициента a.">aButton</a>(app, {}, &amp;<a class="code" href="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3" title="Коэффициент a.">a</a>, &amp;<a class="code" href="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed" title="Минимальное значение для коэффицентов .">minLimit</a>, &amp;<a class="code" href="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d" title="Максимальное значение для коэффицентов .">maxLimit</a>, DoubleInputButton::STANDART_MODE, app-&gt;systemSettings-&gt;MenuColor),
+<a name="l00166"></a>00166         <a class="code" href="group___u_i.html#ga2a7741741b2199ac222556281f1474c0" title="Окно для введения кожффициента b.">bButton</a>(app, {}, &amp;<a class="code" href="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04" title="Коэффициент b.">b</a>, &amp;<a class="code" href="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed" title="Минимальное значение для коэффицентов .">minLimit</a>, &amp;<a class="code" href="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d" title="Максимальное значение для коэффицентов .">maxLimit</a>, DoubleInputButton::STANDART_MODE, app-&gt;systemSettings-&gt;MenuColor),
+<a name="l00167"></a>00167         <a class="code" href="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38" title="Окно для введения кожффициента c.">cButton</a>(app, {}, &amp;<a class="code" href="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa" title="Коэффициент c.">c</a>, &amp;<a class="code" href="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed" title="Минимальное значение для коэффицентов .">minLimit</a>, &amp;<a class="code" href="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d" title="Максимальное значение для коэффицентов .">maxLimit</a>, DoubleInputButton::STANDART_MODE, app-&gt;systemSettings-&gt;MenuColor),
+<a name="l00168"></a>00168         <a class="code" href="group___u_i.html#ga7777447806a3220e12c5e41bbda00652" title="Окно для показа x^2.">aView</a> (app, 0, <span class="stringliteral">&quot;x^2 + &quot;</span>),
+<a name="l00169"></a>00169         <a class="code" href="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229" title="Окно для показа x.">bView</a> (app, 0, <span class="stringliteral">&quot;x + &quot;</span>),
+<a name="l00170"></a>00170         <a class="code" href="group___u_i.html#ga1022c37f483309ed22237043b5454614" title="Кнопка начала вычислений">calcButton</a>(app),
+<a name="l00171"></a>00171         <a class="code" href="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27" title="Поле для вывода ответов">solutions</a>(app),
+<a name="l00172"></a>00172         <a class="code" href="group___u_i.html#gae4813ff258c826e4956286e327f16044" title="Поле с информированием о программе">textWindow</a>(app, app-&gt;systemSettings-&gt;MainFont * 3)
+<a name="l00173"></a>00173     {
+<a name="l00174"></a>00174         resize(_size);
+<a name="l00175"></a>00175         addWindow(<a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e" title="Главный вертикальный LinearLayout.">mainLayout</a>);
+<a name="l00176"></a>00176         <a class="code" href="group___u_i.html#gae4813ff258c826e4956286e327f16044" title="Поле с информированием о программе">textWindow</a>.setText(<span class="stringliteral">&quot;Введите коэффициенты уравнения:&quot;</span>);
+<a name="l00177"></a>00177         <a class="code" href="group___u_i.html#gae4813ff258c826e4956286e327f16044" title="Поле с информированием о программе">textWindow</a>.setWrapStatusY(1);
+<a name="l00178"></a>00178         <a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e" title="Главный вертикальный LinearLayout.">mainLayout</a>.addWindow(<a class="code" href="group___u_i.html#gae4813ff258c826e4956286e327f16044" title="Поле с информированием о программе">textWindow</a>);
+<a name="l00179"></a>00179         <a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e" title="Главный вертикальный LinearLayout.">mainLayout</a>.addWindow(<a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>);
+<a name="l00180"></a>00180         <a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>.addWindow(<a class="code" href="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4" title="Окно для введения кожффициента a.">aButton</a>);
+<a name="l00181"></a>00181         <a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>.addWindow(<a class="code" href="group___u_i.html#ga7777447806a3220e12c5e41bbda00652" title="Окно для показа x^2.">aView</a>);
+<a name="l00182"></a>00182         <a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>.addWindow(<a class="code" href="group___u_i.html#ga2a7741741b2199ac222556281f1474c0" title="Окно для введения кожффициента b.">bButton</a>);
+<a name="l00183"></a>00183         <a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>.addWindow(<a class="code" href="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229" title="Окно для показа x.">bView</a>);
+<a name="l00184"></a>00184         <a class="code" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e" title="Горизонтальный LinearLayout, где размещены окна введения ответа">inputLayout</a>.addWindow(<a class="code" href="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38" title="Окно для введения кожффициента c.">cButton</a>);
+<a name="l00185"></a>00185         <a class="code" href="group___u_i.html#ga1022c37f483309ed22237043b5454614" title="Кнопка начала вычислений">calcButton</a>.setReciever(<span class="keyword">this</span>);
+<a name="l00186"></a>00186         <a class="code" href="group___u_i.html#ga1022c37f483309ed22237043b5454614" title="Кнопка начала вычислений">calcButton</a>.setMessage(<a class="code" href="group___u_i.html#ga4e207ce02c4161839da7448825e51b42" title="Ключ для сообщения, посылаемого в это окно для старта решения уравнения">solute</a>, NULL);
+<a name="l00187"></a>00187         <a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e" title="Главный вертикальный LinearLayout.">mainLayout</a>.addWindow(<a class="code" href="group___u_i.html#ga1022c37f483309ed22237043b5454614" title="Кнопка начала вычислений">calcButton</a>);
+<a name="l00188"></a>00188         <a class="code" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e" title="Главный вертикальный LinearLayout.">mainLayout</a>.addWindow(<a class="code" href="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27" title="Поле для вывода ответов">solutions</a>);
+<a name="l00189"></a>00189     }
+<a name="l00190"></a>00190 
+<a name="l00191"></a>00191     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00199"></a>00199 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00200"></a>00200     <span class="keywordtype">void</span> <a class="code" href="group___u_i.html#gade5ec3301160d71543861fa5ff304b65" title="Нормализует ответы полученные решающей системой">setAnswer</a>(<a class="code" href="struct_number.html" title="Класс числа">Number</a> answers[2], <span class="keywordtype">int</span> length);
+<a name="l00201"></a>00201 
+<a name="l00202"></a>00202 
+<a name="l00203"></a>00203     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00216"></a>00216 <span class="comment"></span>   <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00217"></a>00217     <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="group___u_i.html#ga1c03a2ee74011c0a074af627afb8ed2f" title="Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположен...">onSize</a>(Vector managerSize, Rect newRect = {});
+<a name="l00218"></a>00218 
+<a name="l00219"></a>00219     <span class="comment">//{----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00227"></a>00227 <span class="comment"></span>    <span class="comment">//}----------------------------------------------------------------------------------------------------------------</span>
+<a name="l00228"></a>00228     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="group___u_i.html#ga2d8d20928bef617e08770ec8d021fdcb" title="Вызывается при получении соообщеия">onMessageRecieve</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* data) <span class="keyword">override</span>;
+<a name="l00229"></a>00229 };
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по QuadraticCalc. Последние изменения: Sun Jan 29 2023 16:33:58. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>

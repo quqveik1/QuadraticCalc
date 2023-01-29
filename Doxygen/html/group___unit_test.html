@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>QuadraticCalc: Тестировчная часть</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">QuadraticCalc&#160;<span id="projectnumber">1.0</span></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<h1>Тестировчная часть</h1>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_test.html#ga75351e3c1b1ef88c42a84615af4ba144">unitTest</a> (double _a, double _b, double _c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Тестирует уравнение с заданными коэффициентами ax^2 + bx + c =0.  <a href="#ga75351e3c1b1ef88c42a84615af4ba144"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_test.html#gacc379c6d974599da56ffecfec5ea5eaf">runAndPrintUnitTest</a> (double _a, double _b, double _c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax^2 + bx + c =0.  <a href="#gacc379c6d974599da56ffecfec5ea5eaf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5c75c8ab53dd22e5006193e19638e838"></a><!-- doxytag: member="UnitTest::startUnitTest" ref="ga5c75c8ab53dd22e5006193e19638e838" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_test.html#ga5c75c8ab53dd22e5006193e19638e838">startUnitTest</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает юниттесты <br/></td></tr>
+</table>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="gacc379c6d974599da56ffecfec5ea5eaf"></a><!-- doxytag: member="QuadraticCalc.cpp::runAndPrintUnitTest" ref="gacc379c6d974599da56ffecfec5ea5eaf" args="(double _a, double _b, double _c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runAndPrintUnitTest </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>solutionsAmount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>firstAnswer</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>secondAnswer</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax^2 + bx + c =0. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_a</td><td>Коэффициент a </td></tr>
+    <tr><td class="paramname">_b</td><td>Коэффициент b </td></tr>
+    <tr><td class="paramname">_c</td><td>Коэффициент c </td></tr>
+    <tr><td class="paramname">solutionsAmount</td><td>Количество решений </td></tr>
+    <tr><td class="paramname">firstAnswer</td><td>Первый ответ(по умолчанию ноль) </td></tr>
+    <tr><td class="paramname">secondAnswer</td><td>Второй ответ(по умолчанию ноль)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="group___unit_test.html#ga75351e3c1b1ef88c42a84615af4ba144" title="Тестирует уравнение с заданными коэффициентами ax^2 + bx + c =0.">unitTest()</a></dd></dl>
+<div class="fragment"><pre class="fragment">    <span class="comment">//                                      sol amount</span>
+    <span class="comment">//                   a       b       c       |       first sol       second sol</span>
+    <span class="comment">//полные уравнения</span>
+    <a class="code" href="group___unit_test.html#gacc379c6d974599da56ffecfec5ea5eaf" title="Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax^2 + bx + c =0...">runAndPrintUnitTest</a> (-3.5,   5,      9,      2,      -1.04117,       2.46974);
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="ga75351e3c1b1ef88c42a84615af4ba144"></a><!-- doxytag: member="QuadraticCalc.cpp::unitTest" ref="ga75351e3c1b1ef88c42a84615af4ba144" args="(double _a, double _b, double _c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool unitTest </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>solutionsAmount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>firstAnswer</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>secondAnswer</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Тестирует уравнение с заданными коэффициентами ax^2 + bx + c =0. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_a</td><td>Коэффициент a </td></tr>
+    <tr><td class="paramname">_b</td><td>Коэффициент b </td></tr>
+    <tr><td class="paramname">_c</td><td>Коэффициент c </td></tr>
+    <tr><td class="paramname">solutionsAmount</td><td>Количество решений </td></tr>
+    <tr><td class="paramname">firstAnswer</td><td>Первый ответ(по умолчанию ноль) </td></tr>
+    <tr><td class="paramname">secondAnswer</td><td>Второй ответ(по умолчанию ноль)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>1 - юниттест пройден, 0 - юниттест не пройден</dd></dl>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="group___unit_test.html#gacc379c6d974599da56ffecfec5ea5eaf" title="Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax^2 + bx + c =0...">runAndPrintUnitTest()</a></dd></dl>
+<div class="fragment"><pre class="fragment">          <span class="keywordtype">bool</span> isCorrect = <a class="code" href="group___unit_test.html#ga75351e3c1b1ef88c42a84615af4ba144" title="Тестирует уравнение с заданными коэффициентами ax^2 + bx + c =0.">unitTest</a>(_a, _b, _c, solutionsAmount, firstAnswer, secondAnswer);
+          <span class="keywordflow">if</span> (isCorrect)
+          {
+             printf(<span class="stringliteral">&quot;(%lf, %lf, %lf) - юнитест пройден\n&quot;</span>, _a, _b, _c);
+         }
+         <span class="keywordflow">else</span>
+         {
+             printf(<span class="stringliteral">&quot;(%lf, %lf, %lf) - юнитест НЕ пройден\n&quot;</span>, _a, _b, _c);
+         }
+</pre></div> 
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по QuadraticCalc. Последние изменения: Sun Jan 29 2023 16:33:58. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>

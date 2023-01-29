@@ -7,6 +7,16 @@
 
 #include "GraphicEngine.cpp"
 
+//-----------------------------------------------------------------------------------------------------------------
+//!
+//! @defgroup SolutionSystem     Рашающая система
+//! @defgroup UI                 Графическая часть
+//! @defgroup Misc      Разное
+//! @defgroup Technical Технические детали
+//! @defgroup UnitTest           Тестировчная часть
+//}
+//=================================================================================================================
+
 void input(Number& a, Number& b, Number& c)
 {
     printf("Пожалуйста введите коэфиценты уравнения: \n");
@@ -25,29 +35,69 @@ void input(Number& a, Number& b, Number& c)
 
 const double unitTestCmpDelta = 0.001;
 
+
+//{----------------------------------------------------------------------------------------------------------------
+//! @ingroup UnitTest
+//! @brief   Тестирует уравнение с заданными коэффициентами ax^2 + bx + c =0
+//!
+//! @param   _a                Коэффициент a
+//! @param   _b                Коэффициент b
+//! @param   _c                Коэффициент c
+//! @param   solutionsAmount   Количество решений
+//! @param   firstAnswer       Первый ответ(по умолчанию ноль)
+//! @param   secondAnswer      Второй ответ(по умолчанию ноль)
+//!
+//! @return  1 - юниттест пройден, 0 - юниттест не пройден
+//!
+//! @see     runAndPrintUnitTest()
+//!
+//! @usage @code
+//!          bool isCorrect = unitTest(_a, _b, _c, solutionsAmount, firstAnswer, secondAnswer);
+//!          if (isCorrect)
+//!          {
+//!             printf("(%lf, %lf, %lf) - юнитест пройден\n", _a, _b, _c);
+//!         }
+//!         else
+//!         {
+//!             printf("(%lf, %lf, %lf) - юнитест НЕ пройден\n", _a, _b, _c);
+//!         }
+//! @endcode
+//}----------------------------------------------------------------------------------------------------------------
+
 bool unitTest(double _a, double _b, double _c, int solutionsAmount, double firstAnswer = 0, double secondAnswer = 0);
+
+//{----------------------------------------------------------------------------------------------------------------
+//! @ingroup UnitTest
+//! @brief   Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax^2 + bx + c =0
+//!
+//! @param   _a                Коэффициент a
+//! @param   _b                Коэффициент b
+//! @param   _c                Коэффициент c
+//! @param   solutionsAmount   Количество решений
+//! @param   firstAnswer       Первый ответ(по умолчанию ноль)
+//! @param   secondAnswer      Второй ответ(по умолчанию ноль)
+//!
+//!
+//! @see     unitTest()
+//!
+//! @usage @code
+//!    //                                      sol amount
+//!    //                   a       b       c       |       first sol       second sol
+//!    //полные уравнения
+//!    runAndPrintUnitTest (-3.5,   5,      9,      2,      -1.04117,       2.46974);
+//! @endcode
+//}----------------------------------------------------------------------------------------------------------------
+
 void runAndPrintUnitTest(double _a, double _b, double _c, int solutionsAmount, double firstAnswer = 0, double secondAnswer = 0);
+
+//{----------------------------------------------------------------------------------------------------------------
+//! @ingroup UnitTest
+//! @brief   Запускает юниттесты
+//}----------------------------------------------------------------------------------------------------------------
 void startUnitTest();
 
 int main()
 {
-    /*
-    
-    Number a, b, c;
-    input(a, b, c);
-
-
-    Number answer[2] = {};
-    int answersNum = solveExpression(a, b, c, answer);
-    printf("Количество решений: %d\n", answersNum);
-
-    for (int i = 0; i < answersNum; i++)
-    {
-        printf("%d: %s\n", i + 1, answer[i].toString());
-    }
-    */
-    
-    
     GraphicEngine* graphicEngine = new GraphicEngine();
     startUnitTest();
     graphicEngine->startApp();

@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>QuadraticCalc: Рашающая система</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">QuadraticCalc&#160;<span id="projectnumber">1.0</span></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<h1>Рашающая система</h1>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_number.html">Number</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс числа  <a href="struct_number.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___solution_system.html#ga465cef1eb6dbaa3741d987df52e4df1f">Number::toString</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Конвертирует класс(число) в строку  <a href="#ga465cef1eb6dbaa3741d987df52e4df1f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_number.html">Number</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___solution_system.html#gab630fcfe8990efe254a8f1a3577c11d5">solveLinearExpression</a> (const <a class="el" href="struct_number.html">Number</a> &amp;a, const <a class="el" href="struct_number.html">Number</a> &amp;b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Решает линейное уравнения с заданными коэффициентами ax + bx =0.  <a href="#gab630fcfe8990efe254a8f1a3577c11d5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___solution_system.html#gab791db2a40d6966916e62b86dd46fcb0">solveExpression</a> (const <a class="el" href="struct_number.html">Number</a> &amp;a, const <a class="el" href="struct_number.html">Number</a> &amp;b, const <a class="el" href="struct_number.html">Number</a> &amp;c, <a class="el" href="struct_number.html">Number</a> answer[2])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Решает квадратные уравнения с заданными коэффициентами ax^2 + bx + c =0.  <a href="#gab791db2a40d6966916e62b86dd46fcb0"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4935cf931b2603e03a356b6981b223da"></a><!-- doxytag: member="SolutionSystem::num" ref="ga4935cf931b2603e03a356b6981b223da" args="" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da">Number::num</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число в виде double . <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga46afc3dcc87e83f7708a280d2283324e"></a><!-- doxytag: member="SolutionSystem::stringNumberSize" ref="ga46afc3dcc87e83f7708a280d2283324e" args="" -->
+static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___solution_system.html#ga46afc3dcc87e83f7708a280d2283324e">Number::stringNumberSize</a> = 200</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Длина строки создаваемой и возвращаемой в toString . <br/></td></tr>
+</table>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="gab791db2a40d6966916e62b86dd46fcb0"></a><!-- doxytag: member="Solve.h::solveExpression" ref="gab791db2a40d6966916e62b86dd46fcb0" args="(const Number &amp;a, const Number &amp;b, const Number &amp;c, Number answer[2])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int solveExpression </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_number.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_number.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_number.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_number.html">Number</a>&#160;</td>
+          <td class="paramname"><em>answer</em>[2]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Решает квадратные уравнения с заданными коэффициентами ax^2 + bx + c =0. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Коэффициент a </td></tr>
+    <tr><td class="paramname">b</td><td>Коэффициент b </td></tr>
+    <tr><td class="paramname">c</td><td>Коэффициент c </td></tr>
+    <tr><td class="paramname">answer[2]</td><td>Массив, куда будут записаны ответы</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Количество корней или -1 если уравнение некорректное</dd></dl>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="struct_number.html" title="Класс числа">Number</a>, <a class="el" href="group___solution_system.html#gab630fcfe8990efe254a8f1a3577c11d5" title="Решает линейное уравнения с заданными коэффициентами ax + bx =0.">solveLinearExpression</a></dd></dl>
+<div class="fragment"><pre class="fragment"> ...
+ <a class="code" href="struct_number.html" title="Класс числа">Number</a> na, nb, nc;
+ na.<a class="code" href="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da" title="Число в виде double .">num</a> = a;
+ nb.<a class="code" href="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da" title="Число в виде double .">num</a> = b;
+ nc.<a class="code" href="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da" title="Число в виде double .">num</a> = c;
+ <a class="code" href="struct_number.html" title="Класс числа">Number</a> answer[2] = {};
+ <span class="keywordtype">int</span> answersNum = <a class="code" href="group___solution_system.html#gab791db2a40d6966916e62b86dd46fcb0" title="Решает квадратные уравнения с заданными коэффициентами ax^2 + bx + c =0.">solveExpression</a>(na, nb, nc, answer);
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="gab630fcfe8990efe254a8f1a3577c11d5"></a><!-- doxytag: member="Solve.h::solveLinearExpression" ref="gab630fcfe8990efe254a8f1a3577c11d5" args="(const Number &amp;a, const Number &amp;b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_number.html">Number</a> solveLinearExpression </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_number.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_number.html">Number</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Решает линейное уравнения с заданными коэффициентами ax + bx =0. </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Коэффициент a </td></tr>
+    <tr><td class="paramname">b</td><td>Коэффициент b</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Ответ в виде <a class="el" href="struct_number.html" title="Класс числа">Number</a></dd></dl>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="struct_number.html" title="Класс числа">Number</a></dd></dl>
+<div class="fragment"><pre class="fragment"> ...
+ <a class="code" href="struct_number.html" title="Класс числа">Number</a> answer = <a class="code" href="group___solution_system.html#gab630fcfe8990efe254a8f1a3577c11d5" title="Решает линейное уравнения с заданными коэффициентами ax + bx =0.">solveLinearExpression</a>(b, c);;
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="ga465cef1eb6dbaa3741d987df52e4df1f"></a><!-- doxytag: member="Number::toString" ref="ga465cef1eb6dbaa3741d987df52e4df1f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * Number::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Конвертирует класс(число) в строку </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="group___unit_test.html#ga75351e3c1b1ef88c42a84615af4ba144" title="Тестирует уравнение с заданными коэффициентами ax^2 + bx + c =0.">unitTest()</a></dd></dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>Статическая строка из char длиной stringNumberSize</dd></dl>
+<div class="fragment"><pre class="fragment"> <a class="code" href="struct_number.html" title="Класс числа">Number</a> d = {};
+ d.<a class="code" href="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da" title="Число в виде double .">num</a> = 52;
+ printf(<span class="stringliteral">&quot;%s&quot;</span>, d.<a class="code" href="group___solution_system.html#ga465cef1eb6dbaa3741d987df52e4df1f" title="Конвертирует класс(число) в строку">toString</a>());
+</pre></div> 
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по QuadraticCalc. Последние изменения: Sun Jan 29 2023 16:33:58. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>

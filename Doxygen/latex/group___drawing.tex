@@ -1,0 +1,109 @@
+\hypertarget{group___drawing}{
+\section{Рисование}
+\label{group___drawing}\index{Рисование@{Рисование}}
+}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{group___drawing_ga153ee021b4561079e10d503826635a0f}{GraphicEngine::onCreate} (HWND window, UINT message, WPARAM wParam, LPARAM lParam) override
+\begin{DoxyCompactList}\small\item\em Создает (смешивает) цвет из трех базовых цветов (компонент). \item\end{DoxyCompactList}\item 
+bool \hyperlink{group___drawing_ga75351e3c1b1ef88c42a84615af4ba144}{unitTest} (double \_\-a, double \_\-b, double \_\-c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)
+\begin{DoxyCompactList}\small\item\em Создает (смешивает) цвет из трех базовых цветов (компонент). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{group___drawing_ga153ee021b4561079e10d503826635a0f}{
+\index{Drawing@{Drawing}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!Drawing@{Drawing}}
+\subsubsection[{onCreate}]{\setlength{\rightskip}{0pt plus 5cm}void GraphicEngine::onCreate (
+\begin{DoxyParamCaption}
+\item[{HWND}]{window, }
+\item[{UINT}]{message, }
+\item[{WPARAM}]{wParam, }
+\item[{LPARAM}]{lParam}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual, inherited\mbox{]}}}}
+\label{group___drawing_ga153ee021b4561079e10d503826635a0f}
+
+
+Создает (смешивает) цвет из трех базовых цветов (компонент). 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em red} & Количество красного цвета в интервале \mbox{[}0; 255\mbox{]}. \\
+\hline
+{\em green} & Количество зеленого цвета в интервале \mbox{[}0; 255\mbox{]}. \\
+\hline
+{\em blue} & Количество синего цвета в интервале \mbox{[}0; 255\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный цвет в формате COLORREF.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{См. также}
+txSetColor(), txGetColor(), txSetFillColor(), txGetFillColor(), txColors, RGB(), txExtractColor(), txRGB2HSL(), txHSL2RGB()
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+          txSetColor (RGB (255, 128, 0));                // Красный + половина зе
+      леного = оранжевый
+
+          int red = 20, green = 200, blue = 20;
+          COLORREF color = RGB (red, green, blue);
+          txSetFillColor (color);
+
+          const COLORREF SKY_COLOR = RGB (0, 128, 255);  // Создаем константу для
+       нового цвета
+
+          ...
+          txSetFillColor (SKY_COLOR);                    // Используем ее
+\end{DoxyCode}
+ \hypertarget{group___drawing_ga75351e3c1b1ef88c42a84615af4ba144}{
+\index{Drawing@{Drawing}!unitTest@{unitTest}}
+\index{unitTest@{unitTest}!Drawing@{Drawing}}
+\subsubsection[{unitTest}]{\setlength{\rightskip}{0pt plus 5cm}bool unitTest (
+\begin{DoxyParamCaption}
+\item[{double}]{\_\-a, }
+\item[{double}]{\_\-b, }
+\item[{double}]{\_\-c, }
+\item[{int}]{solutionsAmount, }
+\item[{double}]{firstAnswer = {\ttfamily 0}, }
+\item[{double}]{secondAnswer = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{group___drawing_ga75351e3c1b1ef88c42a84615af4ba144}
+
+
+Создает (смешивает) цвет из трех базовых цветов (компонент). 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em red} & Количество красного цвета в интервале \mbox{[}0; 255\mbox{]}. \\
+\hline
+{\em green} & Количество зеленого цвета в интервале \mbox{[}0; 255\mbox{]}. \\
+\hline
+{\em blue} & Количество синего цвета в интервале \mbox{[}0; 255\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный цвет в формате COLORREF.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{См. также}
+txSetColor(), txGetColor(), txSetFillColor(), txGetFillColor(), txColors, RGB(), txExtractColor(), txRGB2HSL(), txHSL2RGB()
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+          txSetColor (RGB (255, 128, 0));                // Красный + половина зе
+      леного = оранжевый
+
+          int red = 20, green = 200, blue = 20;
+          COLORREF color = RGB (red, green, blue);
+          txSetFillColor (color);
+
+          const COLORREF SKY_COLOR = RGB (0, 128, 255);  // Создаем константу для
+       нового цвета
+
+          ...
+          txSetFillColor (SKY_COLOR);                    // Используем ее
+\end{DoxyCode}
+ 

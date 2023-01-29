@@ -5,7 +5,23 @@
 
 using namespace std;
 
-//ax + b = 0
+//{----------------------------------------------------------------------------------------------------------------
+//! @ingroup SolutionSystem
+//! @brief   Решает линейное уравнения с заданными коэффициентами ax + bx =0
+//!
+//! @param   a                Коэффициент a
+//! @param   b                Коэффициент b
+//!
+//! @return  Ответ в виде Number
+//!
+//! @see     Number
+//!
+//! @usage @code
+//! ...
+//! Number answer = solveLinearExpression(b, c);;
+//! @endcode
+//}----------------------------------------------------------------------------------------------------------------
+
 Number solveLinearExpression(const Number& a, const Number& b)
 {
     Number answer = {};
@@ -22,6 +38,28 @@ Number solveLinearExpression(const Number& a, const Number& b)
 }
 
 
+//! @ingroup SolutionSystem
+//! @brief   Решает квадратные уравнения с заданными коэффициентами ax^2 + bx + c =0
+//!
+//! @param   a                Коэффициент a
+//! @param   b                Коэффициент b
+//! @param   c                Коэффициент c
+//! @param   answer[2]        Массив, куда будут записаны ответы
+//!
+//! @return  Количество корней или -1 если уравнение некорректное
+//!
+//! @see     Number, solveLinearExpression
+//!
+//! @usage @code
+//! ...
+//! Number na, nb, nc;
+//! na.num = a;
+//! nb.num = b;
+//! nc.num = c;
+//! Number answer[2] = {};
+//! int answersNum = solveExpression(na, nb, nc, answer);
+//! @endcode
+//}----------------------------------------------------------------------------------------------------------------
 int solveExpression(const Number& a, const Number& b, const Number& c, Number answer[2])//ax^2 + bx + c
 {
     Number d = {};

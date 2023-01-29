@@ -34,6 +34,7 @@ void SolutionWindow::onMessageRecieve(const char* name, void* data)
     {
         if (strcmp(name, solute) == 0)
         {
+            
             Number na, nb, nc;
             na.num = a;
             nb.num = b;

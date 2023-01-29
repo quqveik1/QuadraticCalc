@@ -1,0 +1,117 @@
+\hypertarget{group___unit_test}{
+\section{Тестировчная часть}
+\label{group___unit_test}\index{Тестировчная часть@{Тестировчная часть}}
+}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group___unit_test_ga75351e3c1b1ef88c42a84615af4ba144}{unitTest} (double \_\-a, double \_\-b, double \_\-c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)
+\begin{DoxyCompactList}\small\item\em Тестирует уравнение с заданными коэффициентами ax$^\wedge$2 + bx + c =0. \item\end{DoxyCompactList}\item 
+void \hyperlink{group___unit_test_gacc379c6d974599da56ffecfec5ea5eaf}{runAndPrintUnitTest} (double \_\-a, double \_\-b, double \_\-c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)
+\begin{DoxyCompactList}\small\item\em Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax$^\wedge$2 + bx + c =0. \item\end{DoxyCompactList}\item 
+\hypertarget{group___unit_test_ga5c75c8ab53dd22e5006193e19638e838}{
+void \hyperlink{group___unit_test_ga5c75c8ab53dd22e5006193e19638e838}{startUnitTest} ()}
+\label{group___unit_test_ga5c75c8ab53dd22e5006193e19638e838}
+
+\begin{DoxyCompactList}\small\item\em Запускает юниттесты \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{group___unit_test_gacc379c6d974599da56ffecfec5ea5eaf}{
+\index{UnitTest@{UnitTest}!runAndPrintUnitTest@{runAndPrintUnitTest}}
+\index{runAndPrintUnitTest@{runAndPrintUnitTest}!UnitTest@{UnitTest}}
+\subsubsection[{runAndPrintUnitTest}]{\setlength{\rightskip}{0pt plus 5cm}void runAndPrintUnitTest (
+\begin{DoxyParamCaption}
+\item[{double}]{\_\-a, }
+\item[{double}]{\_\-b, }
+\item[{double}]{\_\-c, }
+\item[{int}]{solutionsAmount, }
+\item[{double}]{firstAnswer = {\ttfamily 0}, }
+\item[{double}]{secondAnswer = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{group___unit_test_gacc379c6d974599da56ffecfec5ea5eaf}
+
+
+Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax$^\wedge$2 + bx + c =0. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \_\-a} & Коэффициент a \\
+\hline
+{\em \_\-b} & Коэффициент b \\
+\hline
+{\em \_\-c} & Коэффициент c \\
+\hline
+{\em solutionsAmount} & Количество решений \\
+\hline
+{\em firstAnswer} & Первый ответ(по умолчанию ноль) \\
+\hline
+{\em secondAnswer} & Второй ответ(по умолчанию ноль)\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{group___unit_test_ga75351e3c1b1ef88c42a84615af4ba144}{unitTest()}
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+    //                                      sol amount
+    //                   a       b       c       |       first sol       second s
+      ol
+    //полные уравнения
+    runAndPrintUnitTest (-3.5,   5,      9,      2,      -1.04117,       2.46974)
+      ;
+\end{DoxyCode}
+ \hypertarget{group___unit_test_ga75351e3c1b1ef88c42a84615af4ba144}{
+\index{UnitTest@{UnitTest}!unitTest@{unitTest}}
+\index{unitTest@{unitTest}!UnitTest@{UnitTest}}
+\subsubsection[{unitTest}]{\setlength{\rightskip}{0pt plus 5cm}bool unitTest (
+\begin{DoxyParamCaption}
+\item[{double}]{\_\-a, }
+\item[{double}]{\_\-b, }
+\item[{double}]{\_\-c, }
+\item[{int}]{solutionsAmount, }
+\item[{double}]{firstAnswer = {\ttfamily 0}, }
+\item[{double}]{secondAnswer = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{group___unit_test_ga75351e3c1b1ef88c42a84615af4ba144}
+
+
+Тестирует уравнение с заданными коэффициентами ax$^\wedge$2 + bx + c =0. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \_\-a} & Коэффициент a \\
+\hline
+{\em \_\-b} & Коэффициент b \\
+\hline
+{\em \_\-c} & Коэффициент c \\
+\hline
+{\em solutionsAmount} & Количество решений \\
+\hline
+{\em firstAnswer} & Первый ответ(по умолчанию ноль) \\
+\hline
+{\em secondAnswer} & Второй ответ(по умолчанию ноль)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+1 -\/ юниттест пройден, 0 -\/ юниттест не пройден
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{group___unit_test_gacc379c6d974599da56ffecfec5ea5eaf}{runAndPrintUnitTest()}
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+          bool isCorrect = unitTest(_a, _b, _c, solutionsAmount, firstAnswer, sec
+      ondAnswer);
+          if (isCorrect)
+          {
+             printf("(%lf, %lf, %lf) - юнитест пройден\n", _a, _b, _c);
+         }
+         else
+         {
+             printf("(%lf, %lf, %lf) - юнитест НЕ пройден\n", _a, _b, _c);
+         }
+\end{DoxyCode}
+ 

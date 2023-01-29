@@ -1,0 +1,76 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=5,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large QuadraticCalc \\[1ex]\large 1.0 }\\
+\vspace*{1cm}
+{\large Создано системой Doxygen 1.7.3}\\
+\vspace*{0.5cm}
+{\small Sun Jan 29 2023 16:33:58}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{Алфавитный указатель групп}
+\input{modules}
+\chapter{Алфавитный указатель классов}
+\input{annotated}
+\chapter{Группы}
+\input{group___solution_system}
+\input{group___u_i}
+\input{group___misc}
+\input{group___technical}
+\input{group___unit_test}
+\chapter{Классы}
+\input{struct_graphic_engine}
+\input{struct_main_layout}
+\input{struct_main_window}
+\input{struct_number}
+\input{struct_solution_window}
+\printindex
+\end{document}

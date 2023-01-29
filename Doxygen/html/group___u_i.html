@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>QuadraticCalc: Графическая часть</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">QuadraticCalc&#160;<span id="projectnumber">1.0</span></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<h1>Графическая часть</h1>  </div>
+</div>
+<div class="contents">
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_graphic_engine.html">GraphicEngine</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс наследник AbstractAppData, класс управляющий окном приложения  <a href="struct_graphic_engine.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_main_layout.html">MainLayout</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">LinearLayout, который постоянно себя помещает в центр экрана  <a href="struct_main_layout.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_main_window.html">MainWindow</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Главное окно-менеджер приложения  <a href="struct_main_window.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_solution_window.html">SolutionWindow</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно решающей системы  <a href="struct_solution_window.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga153ee021b4561079e10d503826635a0f">GraphicEngine::onCreate</a> (HWND window, UINT message, WPARAM wParam, LPARAM lParam) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызывается при начале работы цикла окна, тут создаются все окна приложения  <a href="#ga153ee021b4561079e10d503826635a0f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#gae135fdc461d4d39e884509fae4064aa5">MainWindow::onSize</a> (Vector managerSize, Rect _newRect={}) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон  <a href="#gae135fdc461d4d39e884509fae4064aa5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#gade5ec3301160d71543861fa5ff304b65">SolutionWindow::setAnswer</a> (<a class="el" href="struct_number.html">Number</a> answers[2], int length)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализует ответы полученные решающей системой  <a href="#gade5ec3301160d71543861fa5ff304b65"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga1c03a2ee74011c0a074af627afb8ed2f">SolutionWindow::onSize</a> (Vector managerSize, Rect newRect={})</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон  <a href="#ga1c03a2ee74011c0a074af627afb8ed2f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga2d8d20928bef617e08770ec8d021fdcb">SolutionWindow::onMessageRecieve</a> (const char *name, void *data) override</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызывается при получении соообщеия  <a href="#ga2d8d20928bef617e08770ec8d021fdcb"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#gaa5d97e29cf14f8fd13ff22d209ae9785">GraphicEngine::SOLUTIONWINDOWSIZE</a> = { 1000, 225 }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер главной области экрана(области решающей системы), по совместительству минимальный размер окна  <a href="#gaa5d97e29cf14f8fd13ff22d209ae9785"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">LinearLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e">SolutionWindow::mainLayout</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Главный вертикальный LinearLayout.  <a href="#ga22e650d520c660766cd052b6ba1fb74e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">LinearLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e">SolutionWindow::inputLayout</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Горизонтальный LinearLayout, где размещены окна введения ответа  <a href="#gaf225d99589899b4bef32ce968002032e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">TextView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#gae4813ff258c826e4956286e327f16044">SolutionWindow::textWindow</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле с информированием о программе  <a href="#gae4813ff258c826e4956286e327f16044"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DoubleInputButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4">SolutionWindow::aButton</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно для введения кожффициента a.  <a href="#gacd00c79fbbbc007e4c15583b9508d2b4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">TextView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga7777447806a3220e12c5e41bbda00652">SolutionWindow::aView</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно для показа x^2.  <a href="#ga7777447806a3220e12c5e41bbda00652"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3">SolutionWindow::a</a> = 0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент a.  <a href="#ga4a34577d3eee1be3aa79ae62b4292ee3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DoubleInputButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga2a7741741b2199ac222556281f1474c0">SolutionWindow::bButton</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно для введения кожффициента b.  <a href="#ga2a7741741b2199ac222556281f1474c0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">TextView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229">SolutionWindow::bView</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно для показа x.  <a href="#ga5bbdd7ce43a736efddb212202d968229"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04">SolutionWindow::b</a> = 0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент b.  <a href="#ga4309ca79bdd7b0fedaedecb6e6e31f04"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">DoubleInputButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38">SolutionWindow::cButton</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно для введения кожффициента c.  <a href="#ga22a74e860b6aa9a54dc402636fdb6b38"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa">SolutionWindow::c</a> = 0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент c.  <a href="#ga30d6d773e312cb1fefce1d66ec691ffa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">MessageButton&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga1022c37f483309ed22237043b5454614">SolutionWindow::calcButton</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка начала вычислений  <a href="#ga1022c37f483309ed22237043b5454614"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga4e207ce02c4161839da7448825e51b42">SolutionWindow::solute</a> = &quot;solute&quot;</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ключ для сообщения, посылаемого в это окно для старта решения уравнения  <a href="#ga4e207ce02c4161839da7448825e51b42"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">TextView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27">SolutionWindow::solutions</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле для вывода ответов  <a href="#ga7acf2d96092ec6254f5dde5ca9fa5b27"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0790e352f0b21712488f063fe52dbbed"></a><!-- doxytag: member="UI::minLimit" ref="ga0790e352f0b21712488f063fe52dbbed" args="" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed">SolutionWindow::minLimit</a> = DBL_MIN</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальное значение для коэффицентов . <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga682969b1ad756864beaacb4fa1b8120d"></a><!-- doxytag: member="UI::maxLimit" ref="ga682969b1ad756864beaacb4fa1b8120d" args="" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d">SolutionWindow::maxLimit</a> = DBL_MAX</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное значение для коэффицентов . <br/></td></tr>
+</table>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="ga153ee021b4561079e10d503826635a0f"></a><!-- doxytag: member="GraphicEngine::onCreate" ref="ga153ee021b4561079e10d503826635a0f" args="(HWND window, UINT message, WPARAM wParam, LPARAM lParam) override" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GraphicEngine::onCreate </td>
+          <td>(</td>
+          <td class="paramtype">HWND&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM&#160;</td>
+          <td class="paramname"><em>wParam</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPARAM&#160;</td>
+          <td class="paramname"><em>lParam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [override, virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Вызывается при начале работы цикла окна, тут создаются все окна приложения </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Дескриптор окна </td></tr>
+    <tr><td class="paramname">message</td><td>WM_MESSAGE </td></tr>
+    <tr><td class="paramname">wParam</td><td>Параметры сообщения </td></tr>
+    <tr><td class="paramname">lParam</td><td>Параметры сообщения</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>См. также:</b></dt><dd>AbstractAppData  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2d8d20928bef617e08770ec8d021fdcb"></a><!-- doxytag: member="SolutionWindow::onMessageRecieve" ref="ga2d8d20928bef617e08770ec8d021fdcb" args="(const char *name, void *data) override" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SolutionWindow::onMessageRecieve </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [override, virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Вызывается при получении соообщеия </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Ключ сообщения </td></tr>
+    <tr><td class="paramname">data</td><td>Прочие данные соощения</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1c03a2ee74011c0a074af627afb8ed2f"></a><!-- doxytag: member="SolutionWindow::onSize" ref="ga1c03a2ee74011c0a074af627afb8ed2f" args="(Vector managerSize, Rect newRect={})" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SolutionWindow::onSize </td>
+          <td>(</td>
+          <td class="paramtype">Vector&#160;</td>
+          <td class="paramname"><em>managerSize</em></td><td>)</td>
+          <td><code> [virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">managerSize</td><td>Размер более старшего окна, поскольку его нет, то это размер приложения </td></tr>
+    <tr><td class="paramname">_newRect</td><td>Желаемый размер данной менеджера, в большинстве случаев просто {}</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>0</dd></dl>
+<div class="fragment"><pre class="fragment"> appData-&gt;mainManager-&gt;onSize(appData-&gt;systemSettings-&gt;SizeOfScreen);
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="gae135fdc461d4d39e884509fae4064aa5"></a><!-- doxytag: member="MainWindow::onSize" ref="gae135fdc461d4d39e884509fae4064aa5" args="(Vector managerSize, Rect _newRect={}) override" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int MainWindow::onSize </td>
+          <td>(</td>
+          <td class="paramtype">Vector&#160;</td>
+          <td class="paramname"><em>managerSize</em></td><td>)</td>
+          <td><code> [override, virtual, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">managerSize</td><td>Размер более старшего окна, поскольку его нет, то это размер приложения </td></tr>
+    <tr><td class="paramname">_newRect</td><td>Желаемый размер данной менеджера, в большинстве случаев просто {}</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Возвращает:</b></dt><dd>0</dd></dl>
+<div class="fragment"><pre class="fragment"> appData-&gt;mainManager-&gt;onSize(appData-&gt;systemSettings-&gt;SizeOfScreen);
+</pre></div> 
+</div>
+</div>
+<a class="anchor" id="gade5ec3301160d71543861fa5ff304b65"></a><!-- doxytag: member="SolutionWindow::setAnswer" ref="gade5ec3301160d71543861fa5ff304b65" args="(Number answers[2], int length)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SolutionWindow::setAnswer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_number.html">Number</a>&#160;</td>
+          <td class="paramname"><em>answers</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Нормализует ответы полученные решающей системой </p>
+<dl><dt><b>Аргументы:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">answers</td><td>Ответы </td></tr>
+    <tr><td class="paramname">length</td><td>Количество ответов</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Переменные</h2>
+<a class="anchor" id="ga4a34577d3eee1be3aa79ae62b4292ee3"></a><!-- doxytag: member="SolutionWindow::a" ref="ga4a34577d3eee1be3aa79ae62b4292ee3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3">SolutionWindow::a</a> = 0<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Коэффициент a. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>TextView  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gacd00c79fbbbc007e4c15583b9508d2b4"></a><!-- doxytag: member="SolutionWindow::aButton" ref="gacd00c79fbbbc007e4c15583b9508d2b4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoubleInputButton <a class="el" href="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4">SolutionWindow::aButton</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Окно для введения кожффициента a. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>DoubleInputButton  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7777447806a3220e12c5e41bbda00652"></a><!-- doxytag: member="SolutionWindow::aView" ref="ga7777447806a3220e12c5e41bbda00652" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextView <a class="el" href="group___u_i.html#ga7777447806a3220e12c5e41bbda00652">SolutionWindow::aView</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Окно для показа x^2. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>TextView  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4309ca79bdd7b0fedaedecb6e6e31f04"></a><!-- doxytag: member="SolutionWindow::b" ref="ga4309ca79bdd7b0fedaedecb6e6e31f04" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04">SolutionWindow::b</a> = 0<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Коэффициент b. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>TextView  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2a7741741b2199ac222556281f1474c0"></a><!-- doxytag: member="SolutionWindow::bButton" ref="ga2a7741741b2199ac222556281f1474c0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoubleInputButton <a class="el" href="group___u_i.html#ga2a7741741b2199ac222556281f1474c0">SolutionWindow::bButton</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Окно для введения кожффициента b. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>DoubleInputButton  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5bbdd7ce43a736efddb212202d968229"></a><!-- doxytag: member="SolutionWindow::bView" ref="ga5bbdd7ce43a736efddb212202d968229" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextView <a class="el" href="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229">SolutionWindow::bView</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Окно для показа x. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>TextView  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga30d6d773e312cb1fefce1d66ec691ffa"></a><!-- doxytag: member="SolutionWindow::c" ref="ga30d6d773e312cb1fefce1d66ec691ffa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa">SolutionWindow::c</a> = 0<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Коэффициент c. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>TextView  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1022c37f483309ed22237043b5454614"></a><!-- doxytag: member="SolutionWindow::calcButton" ref="ga1022c37f483309ed22237043b5454614" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MessageButton <a class="el" href="group___u_i.html#ga1022c37f483309ed22237043b5454614">SolutionWindow::calcButton</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Кнопка начала вычислений </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>MessageButton  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga22a74e860b6aa9a54dc402636fdb6b38"></a><!-- doxytag: member="SolutionWindow::cButton" ref="ga22a74e860b6aa9a54dc402636fdb6b38" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoubleInputButton <a class="el" href="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38">SolutionWindow::cButton</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Окно для введения кожффициента c. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>DoubleInputButton  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf225d99589899b4bef32ce968002032e"></a><!-- doxytag: member="SolutionWindow::inputLayout" ref="gaf225d99589899b4bef32ce968002032e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout <a class="el" href="group___u_i.html#gaf225d99589899b4bef32ce968002032e">SolutionWindow::inputLayout</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Горизонтальный LinearLayout, где размещены окна введения ответа </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>LinearLayout  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga22e650d520c660766cd052b6ba1fb74e"></a><!-- doxytag: member="SolutionWindow::mainLayout" ref="ga22e650d520c660766cd052b6ba1fb74e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LinearLayout <a class="el" href="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e">SolutionWindow::mainLayout</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Главный вертикальный LinearLayout. </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>LinearLayout  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4e207ce02c4161839da7448825e51b42"></a><!-- doxytag: member="SolutionWindow::solute" ref="ga4e207ce02c4161839da7448825e51b42" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* <a class="el" href="group___u_i.html#ga4e207ce02c4161839da7448825e51b42">SolutionWindow::solute</a> = &quot;solute&quot;<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ключ для сообщения, посылаемого в это окно для старта решения уравнения </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>MessageButton  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7acf2d96092ec6254f5dde5ca9fa5b27"></a><!-- doxytag: member="SolutionWindow::solutions" ref="ga7acf2d96092ec6254f5dde5ca9fa5b27" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextView <a class="el" href="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27">SolutionWindow::solutions</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Поле для вывода ответов </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>TextView  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa5d97e29cf14f8fd13ff22d209ae9785"></a><!-- doxytag: member="GraphicEngine::SOLUTIONWINDOWSIZE" ref="gaa5d97e29cf14f8fd13ff22d209ae9785" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Vector <a class="el" href="group___u_i.html#gaa5d97e29cf14f8fd13ff22d209ae9785">GraphicEngine::SOLUTIONWINDOWSIZE</a> = { 1000, 225 }<code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Размер главной области экрана(области решающей системы), по совместительству минимальный размер окна </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>Vector  </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae4813ff258c826e4956286e327f16044"></a><!-- doxytag: member="SolutionWindow::textWindow" ref="gae4813ff258c826e4956286e327f16044" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextView <a class="el" href="group___u_i.html#gae4813ff258c826e4956286e327f16044">SolutionWindow::textWindow</a><code> [inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Поле с информированием о программе </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd>TextView  </dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по QuadraticCalc. Последние изменения: Sun Jan 29 2023 16:33:58. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>

@@ -1,0 +1,383 @@
+\hypertarget{group___u_i}{
+\section{Графическая часть}
+\label{group___u_i}\index{Графическая часть@{Графическая часть}}
+}
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_graphic_engine}{GraphicEngine}
+\begin{DoxyCompactList}\small\item\em Класс наследник AbstractAppData, класс управляющий окном приложения \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_main_layout}{MainLayout}
+\begin{DoxyCompactList}\small\item\em LinearLayout, который постоянно себя помещает в центр экрана \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_main_window}{MainWindow}
+\begin{DoxyCompactList}\small\item\em Главное окно-\/менеджер приложения \item\end{DoxyCompactList}\item 
+struct \hyperlink{struct_solution_window}{SolutionWindow}
+\begin{DoxyCompactList}\small\item\em Окно решающей системы \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{group___u_i_ga153ee021b4561079e10d503826635a0f}{GraphicEngine::onCreate} (HWND window, UINT message, WPARAM wParam, LPARAM lParam) override
+\begin{DoxyCompactList}\small\item\em Вызывается при начале работы цикла окна, тут создаются все окна приложения \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{group___u_i_gae135fdc461d4d39e884509fae4064aa5}{MainWindow::onSize} (Vector managerSize, Rect \_\-newRect=\{\}) override
+\begin{DoxyCompactList}\small\item\em Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон \item\end{DoxyCompactList}\item 
+void \hyperlink{group___u_i_gade5ec3301160d71543861fa5ff304b65}{SolutionWindow::setAnswer} (\hyperlink{struct_number}{Number} answers\mbox{[}2\mbox{]}, int length)
+\begin{DoxyCompactList}\small\item\em Нормализует ответы полученные решающей системой \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{group___u_i_ga1c03a2ee74011c0a074af627afb8ed2f}{SolutionWindow::onSize} (Vector managerSize, Rect newRect=\{\})
+\begin{DoxyCompactList}\small\item\em Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{group___u_i_ga2d8d20928bef617e08770ec8d021fdcb}{SolutionWindow::onMessageRecieve} (const char $\ast$name, void $\ast$data) override
+\begin{DoxyCompactList}\small\item\em Вызывается при получении соообщеия \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+const Vector \hyperlink{group___u_i_gaa5d97e29cf14f8fd13ff22d209ae9785}{GraphicEngine::SOLUTIONWINDOWSIZE} = \{ 1000, 225 \}
+\begin{DoxyCompactList}\small\item\em Размер главной области экрана(области решающей системы), по совместительству минимальный размер окна \item\end{DoxyCompactList}\item 
+LinearLayout \hyperlink{group___u_i_ga22e650d520c660766cd052b6ba1fb74e}{SolutionWindow::mainLayout}
+\begin{DoxyCompactList}\small\item\em Главный вертикальный LinearLayout. \item\end{DoxyCompactList}\item 
+LinearLayout \hyperlink{group___u_i_gaf225d99589899b4bef32ce968002032e}{SolutionWindow::inputLayout}
+\begin{DoxyCompactList}\small\item\em Горизонтальный LinearLayout, где размещены окна введения ответа \item\end{DoxyCompactList}\item 
+TextView \hyperlink{group___u_i_gae4813ff258c826e4956286e327f16044}{SolutionWindow::textWindow}
+\begin{DoxyCompactList}\small\item\em Поле с информированием о программе \item\end{DoxyCompactList}\item 
+DoubleInputButton \hyperlink{group___u_i_gacd00c79fbbbc007e4c15583b9508d2b4}{SolutionWindow::aButton}
+\begin{DoxyCompactList}\small\item\em Окно для введения кожффициента a. \item\end{DoxyCompactList}\item 
+TextView \hyperlink{group___u_i_ga7777447806a3220e12c5e41bbda00652}{SolutionWindow::aView}
+\begin{DoxyCompactList}\small\item\em Окно для показа x$^\wedge$2. \item\end{DoxyCompactList}\item 
+double \hyperlink{group___u_i_ga4a34577d3eee1be3aa79ae62b4292ee3}{SolutionWindow::a} = 0
+\begin{DoxyCompactList}\small\item\em Коэффициент a. \item\end{DoxyCompactList}\item 
+DoubleInputButton \hyperlink{group___u_i_ga2a7741741b2199ac222556281f1474c0}{SolutionWindow::bButton}
+\begin{DoxyCompactList}\small\item\em Окно для введения кожффициента b. \item\end{DoxyCompactList}\item 
+TextView \hyperlink{group___u_i_ga5bbdd7ce43a736efddb212202d968229}{SolutionWindow::bView}
+\begin{DoxyCompactList}\small\item\em Окно для показа x. \item\end{DoxyCompactList}\item 
+double \hyperlink{group___u_i_ga4309ca79bdd7b0fedaedecb6e6e31f04}{SolutionWindow::b} = 0
+\begin{DoxyCompactList}\small\item\em Коэффициент b. \item\end{DoxyCompactList}\item 
+DoubleInputButton \hyperlink{group___u_i_ga22a74e860b6aa9a54dc402636fdb6b38}{SolutionWindow::cButton}
+\begin{DoxyCompactList}\small\item\em Окно для введения кожффициента c. \item\end{DoxyCompactList}\item 
+double \hyperlink{group___u_i_ga30d6d773e312cb1fefce1d66ec691ffa}{SolutionWindow::c} = 0
+\begin{DoxyCompactList}\small\item\em Коэффициент c. \item\end{DoxyCompactList}\item 
+MessageButton \hyperlink{group___u_i_ga1022c37f483309ed22237043b5454614}{SolutionWindow::calcButton}
+\begin{DoxyCompactList}\small\item\em Кнопка начала вычислений \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{group___u_i_ga4e207ce02c4161839da7448825e51b42}{SolutionWindow::solute} = \char`\"{}solute\char`\"{}
+\begin{DoxyCompactList}\small\item\em Ключ для сообщения, посылаемого в это окно для старта решения уравнения \item\end{DoxyCompactList}\item 
+TextView \hyperlink{group___u_i_ga7acf2d96092ec6254f5dde5ca9fa5b27}{SolutionWindow::solutions}
+\begin{DoxyCompactList}\small\item\em Поле для вывода ответов \item\end{DoxyCompactList}\item 
+\hypertarget{group___u_i_ga0790e352f0b21712488f063fe52dbbed}{
+double \hyperlink{group___u_i_ga0790e352f0b21712488f063fe52dbbed}{SolutionWindow::minLimit} = DBL\_\-MIN}
+\label{group___u_i_ga0790e352f0b21712488f063fe52dbbed}
+
+\begin{DoxyCompactList}\small\item\em Минимальное значение для коэффицентов . \item\end{DoxyCompactList}\item 
+\hypertarget{group___u_i_ga682969b1ad756864beaacb4fa1b8120d}{
+double \hyperlink{group___u_i_ga682969b1ad756864beaacb4fa1b8120d}{SolutionWindow::maxLimit} = DBL\_\-MAX}
+\label{group___u_i_ga682969b1ad756864beaacb4fa1b8120d}
+
+\begin{DoxyCompactList}\small\item\em Максимальное значение для коэффицентов . \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{group___u_i_ga153ee021b4561079e10d503826635a0f}{
+\index{UI@{UI}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!UI@{UI}}
+\subsubsection[{onCreate}]{\setlength{\rightskip}{0pt plus 5cm}void GraphicEngine::onCreate (
+\begin{DoxyParamCaption}
+\item[{HWND}]{window, }
+\item[{UINT}]{message, }
+\item[{WPARAM}]{wParam, }
+\item[{LPARAM}]{lParam}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual, inherited\mbox{]}}}}
+\label{group___u_i_ga153ee021b4561079e10d503826635a0f}
+
+
+Вызывается при начале работы цикла окна, тут создаются все окна приложения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em window} & Дескриптор окна \\
+\hline
+{\em message} & WM\_\-MESSAGE \\
+\hline
+{\em wParam} & Параметры сообщения \\
+\hline
+{\em lParam} & Параметры сообщения\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{См. также}
+AbstractAppData  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga2d8d20928bef617e08770ec8d021fdcb}{
+\index{UI@{UI}!onMessageRecieve@{onMessageRecieve}}
+\index{onMessageRecieve@{onMessageRecieve}!UI@{UI}}
+\subsubsection[{onMessageRecieve}]{\setlength{\rightskip}{0pt plus 5cm}void SolutionWindow::onMessageRecieve (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual, inherited\mbox{]}}}}
+\label{group___u_i_ga2d8d20928bef617e08770ec8d021fdcb}
+
+
+Вызывается при получении соообщеия 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Ключ сообщения \\
+\hline
+{\em data} & Прочие данные соощения\\
+\hline
+\end{DoxyParams}
+\hypertarget{group___u_i_ga1c03a2ee74011c0a074af627afb8ed2f}{
+\index{UI@{UI}!onSize@{onSize}}
+\index{onSize@{onSize}!UI@{UI}}
+\subsubsection[{onSize}]{\setlength{\rightskip}{0pt plus 5cm}int SolutionWindow::onSize (
+\begin{DoxyParamCaption}
+\item[{Vector}]{managerSize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual, inherited\mbox{]}}}}
+\label{group___u_i_ga1c03a2ee74011c0a074af627afb8ed2f}
+
+
+Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em managerSize} & Размер более старшего окна, поскольку его нет, то это размер приложения \\
+\hline
+{\em \_\-newRect} & Желаемый размер данной менеджера, в большинстве случаев просто \{\}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+ appData->mainManager->onSize(appData->systemSettings->SizeOfScreen);
+\end{DoxyCode}
+ \hypertarget{group___u_i_gae135fdc461d4d39e884509fae4064aa5}{
+\index{UI@{UI}!onSize@{onSize}}
+\index{onSize@{onSize}!UI@{UI}}
+\subsubsection[{onSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int MainWindow::onSize (
+\begin{DoxyParamCaption}
+\item[{Vector}]{managerSize}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}override, virtual, inherited\mbox{]}}}}
+\label{group___u_i_gae135fdc461d4d39e884509fae4064aa5}
+
+
+Данная функция вызывается при изменении размеров приложения или при необходимости изменить расположение дочерних окон 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em managerSize} & Размер более старшего окна, поскольку его нет, то это размер приложения \\
+\hline
+{\em \_\-newRect} & Желаемый размер данной менеджера, в большинстве случаев просто \{\}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+0
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+ appData->mainManager->onSize(appData->systemSettings->SizeOfScreen);
+\end{DoxyCode}
+ \hypertarget{group___u_i_gade5ec3301160d71543861fa5ff304b65}{
+\index{UI@{UI}!setAnswer@{setAnswer}}
+\index{setAnswer@{setAnswer}!UI@{UI}}
+\subsubsection[{setAnswer}]{\setlength{\rightskip}{0pt plus 5cm}void SolutionWindow::setAnswer (
+\begin{DoxyParamCaption}
+\item[{{\bf Number}}]{answers\mbox{[}2\mbox{]}, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_gade5ec3301160d71543861fa5ff304b65}
+
+
+Нормализует ответы полученные решающей системой 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em answers} & Ответы \\
+\hline
+{\em length} & Количество ответов\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Переменные}
+\hypertarget{group___u_i_ga4a34577d3eee1be3aa79ae62b4292ee3}{
+\index{UI@{UI}!a@{a}}
+\index{a@{a}!UI@{UI}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf SolutionWindow::a} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga4a34577d3eee1be3aa79ae62b4292ee3}
+
+
+Коэффициент a. 
+
+\begin{DoxySeeAlso}{См. также}
+TextView  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_gacd00c79fbbbc007e4c15583b9508d2b4}{
+\index{UI@{UI}!aButton@{aButton}}
+\index{aButton@{aButton}!UI@{UI}}
+\subsubsection[{aButton}]{\setlength{\rightskip}{0pt plus 5cm}DoubleInputButton {\bf SolutionWindow::aButton}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_gacd00c79fbbbc007e4c15583b9508d2b4}
+
+
+Окно для введения кожффициента a. 
+
+\begin{DoxySeeAlso}{См. также}
+DoubleInputButton  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga7777447806a3220e12c5e41bbda00652}{
+\index{UI@{UI}!aView@{aView}}
+\index{aView@{aView}!UI@{UI}}
+\subsubsection[{aView}]{\setlength{\rightskip}{0pt plus 5cm}TextView {\bf SolutionWindow::aView}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga7777447806a3220e12c5e41bbda00652}
+
+
+Окно для показа x$^\wedge$2. 
+
+\begin{DoxySeeAlso}{См. также}
+TextView  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga4309ca79bdd7b0fedaedecb6e6e31f04}{
+\index{UI@{UI}!b@{b}}
+\index{b@{b}!UI@{UI}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf SolutionWindow::b} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga4309ca79bdd7b0fedaedecb6e6e31f04}
+
+
+Коэффициент b. 
+
+\begin{DoxySeeAlso}{См. также}
+TextView  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga2a7741741b2199ac222556281f1474c0}{
+\index{UI@{UI}!bButton@{bButton}}
+\index{bButton@{bButton}!UI@{UI}}
+\subsubsection[{bButton}]{\setlength{\rightskip}{0pt plus 5cm}DoubleInputButton {\bf SolutionWindow::bButton}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga2a7741741b2199ac222556281f1474c0}
+
+
+Окно для введения кожффициента b. 
+
+\begin{DoxySeeAlso}{См. также}
+DoubleInputButton  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga5bbdd7ce43a736efddb212202d968229}{
+\index{UI@{UI}!bView@{bView}}
+\index{bView@{bView}!UI@{UI}}
+\subsubsection[{bView}]{\setlength{\rightskip}{0pt plus 5cm}TextView {\bf SolutionWindow::bView}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga5bbdd7ce43a736efddb212202d968229}
+
+
+Окно для показа x. 
+
+\begin{DoxySeeAlso}{См. также}
+TextView  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga30d6d773e312cb1fefce1d66ec691ffa}{
+\index{UI@{UI}!c@{c}}
+\index{c@{c}!UI@{UI}}
+\subsubsection[{c}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf SolutionWindow::c} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga30d6d773e312cb1fefce1d66ec691ffa}
+
+
+Коэффициент c. 
+
+\begin{DoxySeeAlso}{См. также}
+TextView  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga1022c37f483309ed22237043b5454614}{
+\index{UI@{UI}!calcButton@{calcButton}}
+\index{calcButton@{calcButton}!UI@{UI}}
+\subsubsection[{calcButton}]{\setlength{\rightskip}{0pt plus 5cm}MessageButton {\bf SolutionWindow::calcButton}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga1022c37f483309ed22237043b5454614}
+
+
+Кнопка начала вычислений 
+
+\begin{DoxySeeAlso}{См. также}
+MessageButton  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga22a74e860b6aa9a54dc402636fdb6b38}{
+\index{UI@{UI}!cButton@{cButton}}
+\index{cButton@{cButton}!UI@{UI}}
+\subsubsection[{cButton}]{\setlength{\rightskip}{0pt plus 5cm}DoubleInputButton {\bf SolutionWindow::cButton}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga22a74e860b6aa9a54dc402636fdb6b38}
+
+
+Окно для введения кожффициента c. 
+
+\begin{DoxySeeAlso}{См. также}
+DoubleInputButton  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_gaf225d99589899b4bef32ce968002032e}{
+\index{UI@{UI}!inputLayout@{inputLayout}}
+\index{inputLayout@{inputLayout}!UI@{UI}}
+\subsubsection[{inputLayout}]{\setlength{\rightskip}{0pt plus 5cm}LinearLayout {\bf SolutionWindow::inputLayout}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_gaf225d99589899b4bef32ce968002032e}
+
+
+Горизонтальный LinearLayout, где размещены окна введения ответа 
+
+\begin{DoxySeeAlso}{См. также}
+LinearLayout  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga22e650d520c660766cd052b6ba1fb74e}{
+\index{UI@{UI}!mainLayout@{mainLayout}}
+\index{mainLayout@{mainLayout}!UI@{UI}}
+\subsubsection[{mainLayout}]{\setlength{\rightskip}{0pt plus 5cm}LinearLayout {\bf SolutionWindow::mainLayout}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga22e650d520c660766cd052b6ba1fb74e}
+
+
+Главный вертикальный LinearLayout. 
+
+\begin{DoxySeeAlso}{См. также}
+LinearLayout  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga4e207ce02c4161839da7448825e51b42}{
+\index{UI@{UI}!solute@{solute}}
+\index{solute@{solute}!UI@{UI}}
+\subsubsection[{solute}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf SolutionWindow::solute} = \char`\"{}solute\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga4e207ce02c4161839da7448825e51b42}
+
+
+Ключ для сообщения, посылаемого в это окно для старта решения уравнения 
+
+\begin{DoxySeeAlso}{См. также}
+MessageButton  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_ga7acf2d96092ec6254f5dde5ca9fa5b27}{
+\index{UI@{UI}!solutions@{solutions}}
+\index{solutions@{solutions}!UI@{UI}}
+\subsubsection[{solutions}]{\setlength{\rightskip}{0pt plus 5cm}TextView {\bf SolutionWindow::solutions}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_ga7acf2d96092ec6254f5dde5ca9fa5b27}
+
+
+Поле для вывода ответов 
+
+\begin{DoxySeeAlso}{См. также}
+TextView  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_gaa5d97e29cf14f8fd13ff22d209ae9785}{
+\index{UI@{UI}!SOLUTIONWINDOWSIZE@{SOLUTIONWINDOWSIZE}}
+\index{SOLUTIONWINDOWSIZE@{SOLUTIONWINDOWSIZE}!UI@{UI}}
+\subsubsection[{SOLUTIONWINDOWSIZE}]{\setlength{\rightskip}{0pt plus 5cm}const Vector {\bf GraphicEngine::SOLUTIONWINDOWSIZE} = \{ 1000, 225 \}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_gaa5d97e29cf14f8fd13ff22d209ae9785}
+
+
+Размер главной области экрана(области решающей системы), по совместительству минимальный размер окна 
+
+\begin{DoxySeeAlso}{См. также}
+Vector  
+\end{DoxySeeAlso}
+\hypertarget{group___u_i_gae4813ff258c826e4956286e327f16044}{
+\index{UI@{UI}!textWindow@{textWindow}}
+\index{textWindow@{textWindow}!UI@{UI}}
+\subsubsection[{textWindow}]{\setlength{\rightskip}{0pt plus 5cm}TextView {\bf SolutionWindow::textWindow}\hspace{0.3cm}{\ttfamily  \mbox{[}inherited\mbox{]}}}}
+\label{group___u_i_gae4813ff258c826e4956286e327f16044}
+
+
+Поле с информированием о программе 
+
+\begin{DoxySeeAlso}{См. также}
+TextView  
+\end{DoxySeeAlso}
