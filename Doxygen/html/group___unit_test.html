@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>QuadraticCalc: Тестировчная часть</title>
+<title>QudraticCalc: Тестировочная часть</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -18,8 +18,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Icon64.bmp"></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">QuadraticCalc&#160;<span id="projectnumber">1.0</span></div>
+   <div id="projectname">QudraticCalc</div>
   </td>
  </tr>
  </tbody>
@@ -52,9 +53,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#func-members">Функции</a>  </div>
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
   <div class="headertitle">
-<h1>Тестировчная часть</h1>  </div>
+<h1>Тестировочная часть</h1>  </div>
 </div>
 <div class="contents">
 <table class="memberdecls">
@@ -67,6 +69,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5c75c8ab53dd22e5006193e19638e838"></a><!-- doxytag: member="UnitTest::startUnitTest" ref="ga5c75c8ab53dd22e5006193e19638e838" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_test.html#ga5c75c8ab53dd22e5006193e19638e838">startUnitTest</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запускает юниттесты <br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf84d2a5747328a7cc2105b51461dcf17"></a><!-- doxytag: member="UnitTest::unitTestCmpDelta" ref="gaf84d2a5747328a7cc2105b51461dcf17" args="" -->
+const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___unit_test.html#gaf84d2a5747328a7cc2105b51461dcf17">unitTestCmpDelta</a> = 0.001</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Дельта сравнения ответов в юнитестах . <br/></td></tr>
 </table>
 <hr/><h2>Функции</h2>
 <a class="anchor" id="gacc379c6d974599da56ffecfec5ea5eaf"></a><!-- doxytag: member="QuadraticCalc.cpp::runAndPrintUnitTest" ref="gacc379c6d974599da56ffecfec5ea5eaf" args="(double _a, double _b, double _c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)" -->
@@ -136,6 +143,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
     <span class="comment">//полные уравнения</span>
     <a class="code" href="group___unit_test.html#gacc379c6d974599da56ffecfec5ea5eaf" title="Тестирует уравнение и ВЫВОДИТ на экран результат теста с заданными коэффициентами ax^2 + bx + c =0...">runAndPrintUnitTest</a> (-3.5,   5,      9,      2,      -1.04117,       2.46974);
 </pre></div> 
+<p>См. определение в файле <a class="el" href="_quadratic_calc_8cpp_source.html">QuadraticCalc.cpp</a> строка <a class="el" href="_quadratic_calc_8cpp_source.html#l00204">204</a></p>
+
 </div>
 </div>
 <a class="anchor" id="ga75351e3c1b1ef88c42a84615af4ba144"></a><!-- doxytag: member="QuadraticCalc.cpp::unitTest" ref="ga75351e3c1b1ef88c42a84615af4ba144" args="(double _a, double _b, double _c, int solutionsAmount, double firstAnswer=0, double secondAnswer=0)" -->
@@ -211,6 +220,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
              printf(<span class="stringliteral">&quot;(%lf, %lf, %lf) - юнитест НЕ пройден\n&quot;</span>, _a, _b, _c);
          }
 </pre></div> 
+<p>См. определение в файле <a class="el" href="_quadratic_calc_8cpp_source.html">QuadraticCalc.cpp</a> строка <a class="el" href="_quadratic_calc_8cpp_source.html#l00219">219</a></p>
+
 </div>
 </div>
 </div>
@@ -228,7 +239,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Документация по QuadraticCalc. Последние изменения: Sun Jan 29 2023 16:33:58. Создано системой&#160;
+<hr class="footer"/><address class="footer"><small>Документация по QudraticCalc. Последние изменения: Sun Feb 5 2023 17:33:35. Создано системой&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
 </body>

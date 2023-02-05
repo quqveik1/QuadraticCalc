@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="QudraticCalc - Простая программа для решения квадратных уравнений в удобном графическом UI."><param name="Local" value="index.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Группы"><param name="Local" value="modules.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Решающая система"><param name="Local" value="group___solution_system.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Графическая часть"><param name="Local" value="group___u_i.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Тестировочная часть"><param name="Local" value="group___unit_test.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Классы"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="GraphicEngine"><param name="Local" value="struct_graphic_engine.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="MainLayout"><param name="Local" value="struct_main_layout.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="MainWindow"><param name="Local" value="struct_main_window.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Number"><param name="Local" value="struct_number.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="SolutionWindow"><param name="Local" value="struct_solution_window.html"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Алфавитный указатель классов"><param name="Local" value="classes.html"><param name="ImageNumber" value="1"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Члены классов"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Файлы"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/GraphicEngine.cpp"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/GraphicEngine.h"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/MainLayout.cpp"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/MainLayout.h"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/MainManager.h"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/MainWindow.cpp"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/MainWindow.h"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/Number.cpp"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/Number.h"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/QuadraticCalc.cpp"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/resource.h"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/SolutionWindow.cpp"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/SolutionWindow.h"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="C:/Users/Алехандро/Desktop/AlexProjects/QuadraticCalc/Solve.h"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3"><param name="Name" value="a"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a175022b70954fae40ba27f4ea68125d9"><param name="Name" value="aButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a175022b70954fae40ba27f4ea68125d9"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a18cf698a1c7e4078cb84e77e9a678313"><param name="Name" value="aView"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a18cf698a1c7e4078cb84e77e9a678313"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga7777447806a3220e12c5e41bbda00652"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04"><param name="Name" value="b"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a6a087dee81c3c01d925d7527710709f5"><param name="Name" value="bButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a6a087dee81c3c01d925d7527710709f5"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2a7741741b2199ac222556281f1474c0"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a9d36a6bd6ba4a8407c91e31a662f25d4"><param name="Name" value="bView"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a9d36a6bd6ba4a8407c91e31a662f25d4"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa"><param name="Name" value="c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ac1f68c80e77a760bde3a453df465ee89"><param name="Name" value="calcButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ac1f68c80e77a760bde3a453df465ee89"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga1022c37f483309ed22237043b5454614"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a76137e29f12768665f0beb001cab8539"><param name="Name" value="cButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a76137e29f12768665f0beb001cab8539"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_graphic_engine.html"><param name="Name" value="GraphicEngine"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_graphic_engine.html#ga153ee021b4561079e10d503826635a0f"><param name="Name" value="onCreate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_graphic_engine.html#ga03909a66d09bc1c0cbe1d8a7b9466ec2"><param name="Name" value="setWindowParameters"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_graphic_engine.html#gaa5d97e29cf14f8fd13ff22d209ae9785"><param name="Name" value="SOLUTIONWINDOWSIZE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a305d44e316a355b7d8c69546da58f824"><param name="Name" value="inputLayout"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a305d44e316a355b7d8c69546da58f824"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaf225d99589899b4bef32ce968002032e"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_main_layout.html"><param name="Name" value="MainLayout"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_main_layout.html#ga149898e888a7519a9c040654a7e3621e"><param name="Name" value="MainLayout"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e"><param name="Name" value="mainLayout"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga149898e888a7519a9c040654a7e3621e"><param name="Name" value="MainLayout"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_main_window.html"><param name="Name" value="MainWindow"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_main_window.html#aeaa6e32cedf84f6b1bebcaa649363631"><param name="Name" value="MainWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_main_window.html#ae135fdc461d4d39e884509fae4064aa5"><param name="Name" value="onSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaeaa6e32cedf84f6b1bebcaa649363631"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d"><param name="Name" value="maxLimit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed"><param name="Name" value="minLimit"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da"><param name="Name" value="num"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da"><param name="Name" value="Number"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da"><param name="Name" value="SolutionSystem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_number.html"><param name="Name" value="Number"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_number.html#ga4935cf931b2603e03a356b6981b223da"><param name="Name" value="num"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_number.html#ga46afc3dcc87e83f7708a280d2283324e"><param name="Name" value="stringNumberSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_number.html#ga465cef1eb6dbaa3741d987df52e4df1f"><param name="Name" value="toString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga153ee021b4561079e10d503826635a0f"><param name="Name" value="onCreate"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga153ee021b4561079e10d503826635a0f"><param name="Name" value="GraphicEngine"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga153ee021b4561079e10d503826635a0f"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2d8d20928bef617e08770ec8d021fdcb"><param name="Name" value="onMessageRecieve"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2d8d20928bef617e08770ec8d021fdcb"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2d8d20928bef617e08770ec8d021fdcb"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_main_window.html#ae135fdc461d4d39e884509fae4064aa5"><param name="Name" value="onSize"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_main_window.html#ae135fdc461d4d39e884509fae4064aa5"><param name="Name" value="MainWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga1c03a2ee74011c0a074af627afb8ed2f"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gae135fdc461d4d39e884509fae4064aa5"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html#gacc379c6d974599da56ffecfec5ea5eaf"><param name="Name" value="runAndPrintUnitTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gade5ec3301160d71543861fa5ff304b65"><param name="Name" value="setAnswer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gade5ec3301160d71543861fa5ff304b65"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gade5ec3301160d71543861fa5ff304b65"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga03909a66d09bc1c0cbe1d8a7b9466ec2"><param name="Name" value="setWindowParameters"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga03909a66d09bc1c0cbe1d8a7b9466ec2"><param name="Name" value="GraphicEngine"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga03909a66d09bc1c0cbe1d8a7b9466ec2"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4e207ce02c4161839da7448825e51b42"><param name="Name" value="solute"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4e207ce02c4161839da7448825e51b42"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4e207ce02c4161839da7448825e51b42"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a3b5d4cafdf2e22baadcf98458031e361"><param name="Name" value="solutions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a3b5d4cafdf2e22baadcf98458031e361"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html"><param name="Name" value="SolutionSystem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga4935cf931b2603e03a356b6981b223da"><param name="Name" value="num"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#gab791db2a40d6966916e62b86dd46fcb0"><param name="Name" value="solveExpression"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#gab630fcfe8990efe254a8f1a3577c11d5"><param name="Name" value="solveLinearExpression"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga46afc3dcc87e83f7708a280d2283324e"><param name="Name" value="stringNumberSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga465cef1eb6dbaa3741d987df52e4df1f"><param name="Name" value="toString"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html"><param name="Name" value="SolutionWindow"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga4a34577d3eee1be3aa79ae62b4292ee3"><param name="Name" value="a"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a175022b70954fae40ba27f4ea68125d9"><param name="Name" value="aButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a18cf698a1c7e4078cb84e77e9a678313"><param name="Name" value="aView"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga4309ca79bdd7b0fedaedecb6e6e31f04"><param name="Name" value="b"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a6a087dee81c3c01d925d7527710709f5"><param name="Name" value="bButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a9d36a6bd6ba4a8407c91e31a662f25d4"><param name="Name" value="bView"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga30d6d773e312cb1fefce1d66ec691ffa"><param name="Name" value="c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ac1f68c80e77a760bde3a453df465ee89"><param name="Name" value="calcButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a76137e29f12768665f0beb001cab8539"><param name="Name" value="cButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a305d44e316a355b7d8c69546da58f824"><param name="Name" value="inputLayout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga22e650d520c660766cd052b6ba1fb74e"><param name="Name" value="mainLayout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga682969b1ad756864beaacb4fa1b8120d"><param name="Name" value="maxLimit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga0790e352f0b21712488f063fe52dbbed"><param name="Name" value="minLimit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga2d8d20928bef617e08770ec8d021fdcb"><param name="Name" value="onMessageRecieve"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga1c03a2ee74011c0a074af627afb8ed2f"><param name="Name" value="onSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#gade5ec3301160d71543861fa5ff304b65"><param name="Name" value="setAnswer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga4e207ce02c4161839da7448825e51b42"><param name="Name" value="solute"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a3b5d4cafdf2e22baadcf98458031e361"><param name="Name" value="solutions"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#ga2547013608af5cba7d78d21b6b6d7c48"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a49bd318a52dba8176399a31b12abdade"><param name="Name" value="textWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2547013608af5cba7d78d21b6b6d7c48"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaa5d97e29cf14f8fd13ff22d209ae9785"><param name="Name" value="SOLUTIONWINDOWSIZE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaa5d97e29cf14f8fd13ff22d209ae9785"><param name="Name" value="GraphicEngine"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaa5d97e29cf14f8fd13ff22d209ae9785"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#gab791db2a40d6966916e62b86dd46fcb0"><param name="Name" value="solveExpression"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#gab630fcfe8990efe254a8f1a3577c11d5"><param name="Name" value="solveLinearExpression"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html#ga5c75c8ab53dd22e5006193e19638e838"><param name="Name" value="startUnitTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga46afc3dcc87e83f7708a280d2283324e"><param name="Name" value="stringNumberSize"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga46afc3dcc87e83f7708a280d2283324e"><param name="Name" value="Number"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga46afc3dcc87e83f7708a280d2283324e"><param name="Name" value="SolutionSystem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a49bd318a52dba8176399a31b12abdade"><param name="Name" value="textWindow"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_solution_window.html#a49bd318a52dba8176399a31b12abdade"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gae4813ff258c826e4956286e327f16044"><param name="Name" value="UI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga465cef1eb6dbaa3741d987df52e4df1f"><param name="Name" value="toString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga465cef1eb6dbaa3741d987df52e4df1f"><param name="Name" value="Number"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html#ga465cef1eb6dbaa3741d987df52e4df1f"><param name="Name" value="SolutionSystem"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html"><param name="Name" value="UI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4a34577d3eee1be3aa79ae62b4292ee3"><param name="Name" value="a"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gacd00c79fbbbc007e4c15583b9508d2b4"><param name="Name" value="aButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga7777447806a3220e12c5e41bbda00652"><param name="Name" value="aView"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4309ca79bdd7b0fedaedecb6e6e31f04"><param name="Name" value="b"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2a7741741b2199ac222556281f1474c0"><param name="Name" value="bButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga5bbdd7ce43a736efddb212202d968229"><param name="Name" value="bView"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga30d6d773e312cb1fefce1d66ec691ffa"><param name="Name" value="c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga1022c37f483309ed22237043b5454614"><param name="Name" value="calcButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga22a74e860b6aa9a54dc402636fdb6b38"><param name="Name" value="cButton"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaf225d99589899b4bef32ce968002032e"><param name="Name" value="inputLayout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga22e650d520c660766cd052b6ba1fb74e"><param name="Name" value="mainLayout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga149898e888a7519a9c040654a7e3621e"><param name="Name" value="MainLayout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaeaa6e32cedf84f6b1bebcaa649363631"><param name="Name" value="MainWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga682969b1ad756864beaacb4fa1b8120d"><param name="Name" value="maxLimit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga0790e352f0b21712488f063fe52dbbed"><param name="Name" value="minLimit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga153ee021b4561079e10d503826635a0f"><param name="Name" value="onCreate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2d8d20928bef617e08770ec8d021fdcb"><param name="Name" value="onMessageRecieve"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gae135fdc461d4d39e884509fae4064aa5"><param name="Name" value="onSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gade5ec3301160d71543861fa5ff304b65"><param name="Name" value="setAnswer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga03909a66d09bc1c0cbe1d8a7b9466ec2"><param name="Name" value="setWindowParameters"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga4e207ce02c4161839da7448825e51b42"><param name="Name" value="solute"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga7acf2d96092ec6254f5dde5ca9fa5b27"><param name="Name" value="solutions"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#ga2547013608af5cba7d78d21b6b6d7c48"><param name="Name" value="SolutionWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gaa5d97e29cf14f8fd13ff22d209ae9785"><param name="Name" value="SOLUTIONWINDOWSIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html#gae4813ff258c826e4956286e327f16044"><param name="Name" value="textWindow"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html"><param name="Name" value="UnitTest"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html#gacc379c6d974599da56ffecfec5ea5eaf"><param name="Name" value="runAndPrintUnitTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html#ga5c75c8ab53dd22e5006193e19638e838"><param name="Name" value="startUnitTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html#ga75351e3c1b1ef88c42a84615af4ba144"><param name="Name" value="unitTest"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html#ga75351e3c1b1ef88c42a84615af4ba144"><param name="Name" value="unitTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html"><param name="Name" value="UnitTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html#gaf84d2a5747328a7cc2105b51461dcf17"><param name="Name" value="unitTestCmpDelta"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___u_i.html"><param name="Name" value="Графическая часть"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___solution_system.html"><param name="Name" value="Решающая система"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group___unit_test.html"><param name="Name" value="Тестировочная часть"></OBJECT>
+</UL>
+</BODY>
+</HTML>

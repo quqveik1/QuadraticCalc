@@ -8,12 +8,15 @@
 #include <TextView.cpp>
 #include "SolutionWindow.cpp"
 #include <DoubleInputButton.cpp>
+#include "resource.h"
 
 
 GraphicEngine::GraphicEngine() :
     AbstractAppData(NULL)
 {
     setMinSize(SOLUTIONWINDOWSIZE + 50);
+    
+    
 }
 
 
@@ -27,4 +30,16 @@ void GraphicEngine::onCreate(HWND window, UINT message, WPARAM wParam, LPARAM lP
     SolutionWindow* solutionWindow = new SolutionWindow(this, SOLUTIONWINDOWSIZE);
     inputLayout->addWindow(solutionWindow);
     
+}
+
+
+
+
+void GraphicEngine::setWindowParameters(HINSTANCE hInstance)
+{
+    AbstractAppData::setWindowParameters(hInstance);
+    appIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON2));
+    setIcon(appIcon);
+    FreeConsole();
+    DestroyWindow(GetConsoleWindow());
 }
