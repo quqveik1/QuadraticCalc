@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Quadratic Calculator"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.1.0"
 #define MyAppPublisher "Kurlic"
 #define MyAppURL "https://github.com/quqveik1/QuadraticCalc"
 #define MyAppExeName "QuadraticCalc.exe"
@@ -19,7 +19,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={commondocs}\{#MyAppName}
+DefaultDirName={userdocs}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 OutputDir=C:\Users\Алехандро\Desktop\AlexProjects\QuadraticCalc\Installer
@@ -40,6 +40,123 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 [Files]
 Source: "C:\Users\Алехандро\Desktop\AlexProjects\QuadraticCalc\x64\Release\QuadraticCalc.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+Source: "..\Doxygen\html\QuadraticCalc.chm"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\Doxygen\Quadratic Calc Documentation.html"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\Doxygen\html\annotated.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\bc_s.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\BigIcon.bmp"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\classes.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\closed.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\doxygen.css"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\doxygen.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\files.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2blank.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2doc.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2folderclosed.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2folderopen.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2lastnode.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2link.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2mlastnode.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2mnode.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2node.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2plastnode.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2pnode.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2splitbar.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\ftv2vertline.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\functions.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\functions_func.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\functions_vars.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___dialogs.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___drawing.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___misc.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___mouse.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___solution_system.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___technical.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___unit_test.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\group___u_i.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\Icon32.bmp"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\Icon64.bmp"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\index.chm"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\index.hhc"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\index.hhk"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\index.hhp"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\index.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\installdox"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\jquery.js"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\modules.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\navtree.css"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\navtree.js"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\nav_f.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\nav_h.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\open.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\QuadraticCalc.chi"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\resize.js"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\resource_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_graphic_engine-members.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_graphic_engine.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_main_layout-members.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_main_layout.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_main_window-members.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_main_window.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_number-members.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_number.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_solution_window-members.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\struct_solution_window.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\tabs.css"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\tab_a.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\tab_b.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\tab_h.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\tab_s.png"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\vbu.chi"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_graphic_engine_8cpp_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_graphic_engine_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_main_layout_8cpp_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_main_layout_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_main_manager_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_main_window_8cpp_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_main_window_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_number_8cpp_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_number_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_quadratic_calc_8cpp_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_solution_window_8cpp_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_solution_window_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\_solve_8h_source.html"; DestDir: "{app}\html"; Flags: ignoreversion
+Source: "..\Doxygen\html\off\QuadraticCalc.chi"; DestDir: "{app}\html\off"; Flags: ignoreversion
+Source: "..\Doxygen\html\off\QuadraticCalc.chw"; DestDir: "{app}\html\off"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_61.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_62.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_63.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_67.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_69.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_6d.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_6e.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_6f.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_73.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\all_74.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\classes_67.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\classes_6d.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\classes_6e.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\classes_73.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\close.png"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\functions_6d.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\functions_6f.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\functions_73.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\functions_74.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\mag_sel.png"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\nomatches.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\search.css"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\search.js"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\search_l.png"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\search_m.png"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\search_r.png"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_61.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_62.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_63.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_69.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_6d.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_6e.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_73.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
+Source: "..\Doxygen\html\search\variables_74.html"; DestDir: "{app}\html\search"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
