@@ -65,6 +65,7 @@ void SolutionWindow::setAnswer(Number answers[2], int length)
     if (length == 0)
     {
         solutions.setText("Нет решений");
+        return;
     }
 
     static char strAnswers[MAX_PATH] = {};
