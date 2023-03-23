@@ -12,11 +12,9 @@
 
 
 GraphicEngine::GraphicEngine() :
-    AbstractAppData(NULL)
+    AbstractAppData(NULL, "..\\TESTWIN32_GRAPHICAPP\\x64\\Debug")
 {
     setMinSize(SOLUTIONWINDOWSIZE + 50);
-    
-    
 }
 
 
@@ -40,6 +38,6 @@ void GraphicEngine::setWindowParameters(HINSTANCE hInstance)
     AbstractAppData::setWindowParameters(hInstance);
     appIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON2));
     setIcon(appIcon);
-    FreeConsole();
-    DestroyWindow(GetConsoleWindow());
+    //FreeConsole();
+    //DestroyWindow(GetConsoleWindow());
 }

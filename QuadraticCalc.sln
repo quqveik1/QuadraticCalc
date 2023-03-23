@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuadraticCalc", "QuadraticCalc.vcxproj", "{AFA46238-B62A-40B2-994A-D3D969AA8D75}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SaveImage", "..\TESTWIN32_GRAPHICAPP\SaveImage\SaveImage.vcxproj", "{5153165E-A949-4832-A565-7A2AC679606E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{AFA46238-B62A-40B2-994A-D3D969AA8D75}.Release|x64.Build.0 = Release|x64
 		{AFA46238-B62A-40B2-994A-D3D969AA8D75}.Release|x86.ActiveCfg = Release|Win32
 		{AFA46238-B62A-40B2-994A-D3D969AA8D75}.Release|x86.Build.0 = Release|Win32
+		{5153165E-A949-4832-A565-7A2AC679606E}.Debug|x64.ActiveCfg = Debug|x64
+		{5153165E-A949-4832-A565-7A2AC679606E}.Debug|x64.Build.0 = Debug|x64
+		{5153165E-A949-4832-A565-7A2AC679606E}.Debug|x86.ActiveCfg = Debug|Win32
+		{5153165E-A949-4832-A565-7A2AC679606E}.Debug|x86.Build.0 = Debug|Win32
+		{5153165E-A949-4832-A565-7A2AC679606E}.Release|x64.ActiveCfg = Release|x64
+		{5153165E-A949-4832-A565-7A2AC679606E}.Release|x64.Build.0 = Release|x64
+		{5153165E-A949-4832-A565-7A2AC679606E}.Release|x86.ActiveCfg = Release|Win32
+		{5153165E-A949-4832-A565-7A2AC679606E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

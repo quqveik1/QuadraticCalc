@@ -5,6 +5,7 @@
 
 int SolutionWindow::onSize(Vector managerSize, Rect newRect /*= {}*/)
 {
+    Manager::onSize(managerSize, newRect);
     textWindow.onSize(getSize(), { .pos = {}, .finishPos = {getSize().x, textWindow.getSize().y} });
     double xSize = getSize().x;
     double inputButtonSize = (xSize) * ((double)5 / (double)19);
