@@ -116,13 +116,9 @@ void startUnitTest();
 
 int main()
 {
-    GraphicEngine* graphicEngine = new GraphicEngine();
+    GraphicEngine graphicEngine;
     //startUnitTest(); <-- Данная функция проводит юнитесты. 
-    graphicEngine->startApp();
-
-    delete graphicEngine;
-    
-
+    graphicEngine.startApp();
 
     return 0;
 }
