@@ -20,6 +20,8 @@ GraphicEngine::GraphicEngine() :
 
 void GraphicEngine::onCreate(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
 {
+    AbstractAppData::onCreate(window, message, wParam, lParam);
+
     MainWindow* _mainManager = new MainWindow(this);
     setMainManager(_mainManager);
     MainLayout* inputLayout = new MainLayout(this);
@@ -38,6 +40,4 @@ void GraphicEngine::setWindowParameters(HINSTANCE hInstance)
     AbstractAppData::setWindowParameters(hInstance);
     appIcon = LoadIcon(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON2));
     setIcon(appIcon);
-    //FreeConsole();
-    //DestroyWindow(GetConsoleWindow());
 }

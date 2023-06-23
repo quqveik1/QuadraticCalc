@@ -158,6 +158,15 @@ struct SolutionWindow : Manager
     //}----------------------------------------------------------------------------------------------------------------
     double maxLimit = DBL_MAX;
 
+    struct LocalStringResources
+    {
+        static const inline std::string enterCoef = "enterCoef";
+        static const inline std::string solute = "solute";
+        static const inline std::string noSolutions = "noSol";
+        static const inline std::string error = "errorSolWindow";
+        static const inline std::string solutions = "solutions";
+    };
+
 
     //{----------------------------------------------------------------------------------------------------------------
     //! @ingroup UI
@@ -185,7 +194,10 @@ struct SolutionWindow : Manager
     {
         resize(_size);
         addWindow(mainLayout);
-        textWindow.setText("Введите коэффициенты уравнения:");
+
+        initStrings();
+
+        textWindow.setText(getApp().getStringResources().getCResource(LocalStringResources::enterCoef));
         textWindow.setWrapStatusY(1);
         mainLayout.addWindow(textWindow);
         mainLayout.addWindow(inputLayout);
@@ -210,6 +222,8 @@ struct SolutionWindow : Manager
     //! @endcode
     //}----------------------------------------------------------------------------------------------------------------
     void setAnswer(Number answers[2], int length);
+
+    void initStrings();
 
 
     //{----------------------------------------------------------------------------------------------------------------

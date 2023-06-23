@@ -19,15 +19,12 @@ int SolutionWindow::onSize(Vector managerSize, Rect newRect /*= {}*/)
     bButton.onSize(getSize(), { .pos = {}, .finishPos = {inputButtonSize, ySize * 0.3} });
     cButton.onSize(getSize(), { .pos = {}, .finishPos = {inputButtonSize, ySize * 0.3} });
     calcButton.setFont(app->systemSettings->MainFont * 2);
-    calcButton.setText("Решить");
+    calcButton.setText(getApp().getStringResources().getCResource(LocalStringResources::solute));
     calcButton.onSize(getSize(), { .pos = {}, .finishPos = {getSize().x, ySize * 0.3} });
     
     Manager::onSize(managerSize, newRect);
     return 1;
 }
-
-
-
 
 void SolutionWindow::onMessageRecieve(const char* name, void* data)
 {
@@ -49,6 +46,23 @@ void SolutionWindow::onMessageRecieve(const char* name, void* data)
 
 }
 
+void SolutionWindow::initStrings()
+{
+    getApp().getStringResources().addCResource(StringResources::Russian, LocalStringResources::enterCoef, "Введите коэффициенты уравнения:");
+    getApp().getStringResources().addCResource(StringResources::English, LocalStringResources::enterCoef, "Please enter the coefficients of the equation:");
+
+    getApp().getStringResources().addCResource(StringResources::Russian, LocalStringResources::solute, "Решить");
+    getApp().getStringResources().addCResource(StringResources::English, LocalStringResources::solute, "Solute");
+
+    getApp().getStringResources().addCResource(StringResources::Russian, LocalStringResources::noSolutions, "Нет решений");
+    getApp().getStringResources().addCResource(StringResources::English, LocalStringResources::noSolutions, "No solutions");
+
+    getApp().getStringResources().addCResource(StringResources::Russian, LocalStringResources::error, "Ошибка");
+    getApp().getStringResources().addCResource(StringResources::English, LocalStringResources::error, "Error");
+
+    getApp().getStringResources().addCResource(StringResources::Russian, LocalStringResources::solutions, "Решения: ");
+    getApp().getStringResources().addCResource(StringResources::English, LocalStringResources::solutions, "Solutions: ");
+}
 
 void SolutionWindow::setAnswer(Number answers[2], int length)
 {
@@ -60,12 +74,12 @@ void SolutionWindow::setAnswer(Number answers[2], int length)
     onSize({}, {});
     if (length == -1)
     {
-        solutions.setText("Ошибка");
+        solutions.setText(getApp().getStringResources().getCResource(LocalStringResources::error));
         return;
     }
     if (length == 0)
     {
-        solutions.setText("Нет решений");
+        solutions.setText(getApp().getStringResources().getCResource(LocalStringResources::noSolutions));
         return;
     }
 
@@ -77,5 +91,7 @@ void SolutionWindow::setAnswer(Number answers[2], int length)
     }
 
     solutions.setText(strAnswers);
+
+    invalidateButton();
 
 }
