@@ -12,7 +12,7 @@
 
 
 GraphicEngine::GraphicEngine() :
-    AbstractAppData(NULL, "..\\TESTWIN32_GRAPHICAPP\\x64\\Debug")
+    AbstractAppData(NULL, "..\\TESTWIN32_GRAPHICAPP\\x64\\Release")
 {
     setMinSize(SOLUTIONWINDOWSIZE + 50);
 }

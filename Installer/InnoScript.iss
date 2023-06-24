@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Quadratic Calculator"
-#define MyAppVersion "1.1.0"
+#define MyAppVersion "1.2.0"
 #define MyAppPublisher "Kurlic"
 #define MyAppURL "https://github.com/quqveik1/QuadraticCalc"
 #define MyAppExeName "QuadraticCalc.exe"
