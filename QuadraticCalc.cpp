@@ -45,14 +45,12 @@ void input(Number& a, Number& b, Number& c)
     (void)scanf("%lf", &c.num);
 }
 
-
 //{----------------------------------------------------------------------------------------------------------------
 //! @ingroup UnitTest
 //! @brief   Дельта сравнения ответов в юнитестах
 //! @endcode
 //}----------------------------------------------------------------------------------------------------------------
 const double unitTestCmpDelta = 0.001;
-
 
 //{----------------------------------------------------------------------------------------------------------------
 //! @ingroup UnitTest
@@ -122,7 +120,6 @@ int main()
 
     return 0;
 }
-
 
 void startUnitTest()
 {
@@ -197,8 +194,6 @@ void startUnitTest()
     runAndPrintUnitTest (0,      0,      55.6,   -1);
 }
 
-
-
 void runAndPrintUnitTest(double _a, double _b, double _c, int solutionsAmount, double firstAnswer/* = 0*/, double secondAnswer/* = 0*/)
 {
     bool isCorrect = unitTest(_a, _b, _c, solutionsAmount, firstAnswer, secondAnswer);
@@ -211,8 +206,6 @@ void runAndPrintUnitTest(double _a, double _b, double _c, int solutionsAmount, d
         printf("(%lf, %lf, %lf) - юнитест НЕ пройден\n", _a, _b, _c);
     }
 }
-
-
 
 bool unitTest(double _a, double _b, double _c, int solutionsAmount, double firstAnswer/* = 0*/, double secondAnswer/* = 0*/)
 {
@@ -249,9 +242,5 @@ bool unitTest(double _a, double _b, double _c, int solutionsAmount, double first
         }
     }
 
-    
-
     return isCorrect;
-
 }
-

@@ -17,7 +17,6 @@ GraphicEngine::GraphicEngine() :
     setMinSize(SOLUTIONWINDOWSIZE + 50);
 }
 
-
 void GraphicEngine::onCreate(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
 {
     AbstractAppData::onCreate(window, message, wParam, lParam);
@@ -29,11 +28,7 @@ void GraphicEngine::onCreate(HWND window, UINT message, WPARAM wParam, LPARAM lP
     
     SolutionWindow* solutionWindow = new SolutionWindow(this, SOLUTIONWINDOWSIZE);
     inputLayout->addWindow(solutionWindow);
-    
 }
-
-
-
 
 void GraphicEngine::setWindowParameters(HINSTANCE hInstance)
 {

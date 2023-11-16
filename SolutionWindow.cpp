@@ -6,7 +6,9 @@
 int SolutionWindow::onSize(Vector managerSize, Rect newRect /*= {}*/)
 {
     Manager::onSize(managerSize, newRect);
+
     textWindow.onSize(getSize(), { .pos = {}, .finishPos = {getSize().x, textWindow.getSize().y} });
+
     double xSize = getSize().x;
     double inputButtonSize = (xSize) * ((double)5 / (double)19);
     double viewSize = (xSize) * ((double)2 / (double)19);
@@ -15,9 +17,11 @@ int SolutionWindow::onSize(Vector managerSize, Rect newRect /*= {}*/)
     aView.setFont(app->systemSettings->MainFont * 2);
     bView.onSize(getSize(), { .pos = {}, .finishPos = {viewSize, ySize * 0.3} });
     bView.setFont(app->systemSettings->MainFont * 2);
+
     aButton.onSize(getSize(), { .pos = {}, .finishPos = {inputButtonSize, ySize * 0.3} });
     bButton.onSize(getSize(), { .pos = {}, .finishPos = {inputButtonSize, ySize * 0.3} });
     cButton.onSize(getSize(), { .pos = {}, .finishPos = {inputButtonSize, ySize * 0.3} });
+
     calcButton.setFont(app->systemSettings->MainFont * 2);
     calcButton.setText(getApp().getStringResources().getCResource(LocalStringResources::solute));
     calcButton.onSize(getSize(), { .pos = {}, .finishPos = {getSize().x, ySize * 0.3} });
@@ -41,9 +45,7 @@ void SolutionWindow::onMessageRecieve(const char* name, void* data)
             int answersNum = solveExpression(na, nb, nc, answer);
             setAnswer(answer, answersNum);
         }
-
     }
-
 }
 
 void SolutionWindow::initStrings()
@@ -67,7 +69,6 @@ void SolutionWindow::initStrings()
 void SolutionWindow::setAnswer(Number answers[2], int length)
 {
     printf("Количество решений: %d\n", length);
-
 
     solutions.setFont(app->systemSettings->MainFont * 2);
     solutions.onSize(getSize(), { .pos = {}, .finishPos = {getSize().x, (getSize().y - textWindow.getSize().y) * 0.3} });
@@ -93,5 +94,4 @@ void SolutionWindow::setAnswer(Number answers[2], int length)
     solutions.setText(strAnswers);
 
     invalidateButton();
-
 }

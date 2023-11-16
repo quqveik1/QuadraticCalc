@@ -37,7 +37,6 @@ Number solveLinearExpression(const Number& a, const Number& b)
     return answer;
 }
 
-
 //! @ingroup SolutionSystem
 //! @brief   Решает квадратные уравнения с заданными коэффициентами ax^2 + bx + c =0
 //!
@@ -99,6 +98,3 @@ int solveExpression(const Number& a, const Number& b, const Number& c, Number an
 
     return -1;
 }
-//returns amount of solutions
-
-

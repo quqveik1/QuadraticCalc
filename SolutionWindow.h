@@ -134,7 +134,6 @@ struct SolutionWindow : Manager
     //}----------------------------------------------------------------------------------------------------------------
     const char* solute = "solute";
 
-
     //{----------------------------------------------------------------------------------------------------------------
     //! @ingroup UI
     //! @brief   Поле для вывода ответов
@@ -166,7 +165,6 @@ struct SolutionWindow : Manager
         static const inline std::string error = "errorSolWindow";
         static const inline std::string solutions = "solutions";
     };
-
 
     //{----------------------------------------------------------------------------------------------------------------
     //! @ingroup UI
@@ -224,7 +222,6 @@ struct SolutionWindow : Manager
     void setAnswer(Number answers[2], int length);
 
     void initStrings();
-
 
     //{----------------------------------------------------------------------------------------------------------------
    //! @ingroup UI
